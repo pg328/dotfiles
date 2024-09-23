@@ -1,0 +1,14 @@
+[Number]
+NumberOfWindows=1
+
+[WindowProperties1]
+2 screens: Height=480
+2 screens: Width=640
+2 screens: XPosition=0
+2 screens: YPosition=0
+ClassName=KMixWindow
+HDMI-0 HDMI-1=HDMI-1
+MenuBar=Disabled
+ObjectName=KMixWindow
+State=AAAA/wAAAAD9AAAAAAAAAAAAAAAAAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled

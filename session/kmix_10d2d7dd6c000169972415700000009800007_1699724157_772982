@@ -1,0 +1,14 @@
+[Number]
+NumberOfWindows=1
+
+[WindowProperties1]
+640x480 screen: Height=480
+640x480 screen: Width=640
+640x480 screen: XPosition=0
+640x480 screen: YPosition=0
+:0.0=:0.0
+ClassName=KMixWindow
+MenuBar=Disabled
+ObjectName=KMixWindow
+State=AAAA/wAAAAD9AAAAAAAAAAAAAAAAAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled

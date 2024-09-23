@@ -1,0 +1,40 @@
+[$Version]
+update_info=webenginepart.upd:MoveNonPasswordStorableSites
+
+[History Dialog]
+3440x1440 screen: Height=400
+3440x1440 screen: Width=500
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Downloads/droidcam_2.0.0.zip,file:$HOME/Downloads/urserver-3.13.0.2505.tar.gz
+Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/
+detailViewIconSize=16
+
+[MainWindow]
+2 screens: Height=1354
+2 screens: Width=1692
+2 screens: XPosition=19
+2 screens: YPosition=65
+3440x1440 screen: Height=677
+3440x1440 screen: Width=1707
+3440x1440 screen: XPosition=0
+3440x1440 screen: YPosition=0
+DP-0=DP-0
+HDMI-0=HDMI-0
+HDMI-0 HDMI-1=HDMI-0
+HDMI-1=HDMI-1
+MenuBar=Disabled
+StatusBar=Enabled
+ToolBarsMovable=Disabled
+
+[Notification Messages]
+Complete Full Screen Warning=false
+
+[SearchBar]
+CompletionMode=5
+CurrentEngine=duckduckgo
+History list=\\0
+Mode=1
+
+[Undo]
+Number of Closed Windows=20

@@ -1,0 +1,27 @@
+[Glossary]
+CachedGlossary[$e]=/usr/share/doc/HTML/en/khelpcenter/glossary/index.docbook
+CachedGlossaryTimestamp=1708479759
+
+[HTML Settings]
+AutomaticDetectionLanguage=1
+
+[Layout]
+CurrentTab=Glossary
+
+[MainWindow]
+3440x1440 screen: Height=437
+3440x1440 screen: Width=1707
+3440x1440 screen: XPosition=1726
+3440x1440 screen: YPosition=514
+DP-0=DP-0
+HDMI-0=HDMI-0
+HDMI-1=HDMI-1
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABqsAAAJFAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[MainWindowState]
+Splitter=482,1224
+
+[Search]
+ScopeSelection=0

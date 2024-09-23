@@ -1,0 +1,26 @@
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display,dolphin_directorysizemode.upd:convert-directorysizecount-to-directorysizemode
+
+[ExtractDialog]
+2 screens: Height=740
+2 screens: Width=2158
+2 screens: Window-Maximized=true
+3440x1440 screen: Height=740
+3440x1440 screen: Width=2220
+DirHistory[$e]=$HOME/Downloads/zmk_newest/Firmware/,/usr/local/share/fonts/,/run/media/phil/NICENANO/,$HOME/Downloads/zmk_newest/
+
+[General]
+LockPanels=false
+Version=202
+ViewPropsTimestamp=2023,8,7,0,29,49.395
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=16
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[PlacesPanel]
+IconSize=16

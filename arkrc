@@ -1,0 +1,33 @@
+[ExtractDialog]
+2 screens: Window-Maximized=true
+3440x1440 screen: Window-Maximized=true
+DirHistory[$e]=$HOME/Downloads/,$HOME/cv/,$HOME/Downloads/zmk_newest/Firmware/
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+2 screens: Height=1385
+2 screens: Width=1692
+2 screens: XPosition=14
+2 screens: YPosition=41
+3440x1440 screen: Height=317
+3440x1440 screen: Width=1707
+3440x1440 screen: XPosition=1726
+3440x1440 screen: YPosition=1114
+DP-0=DP-0
+HDMI-0=HDMI-0
+HDMI-0 HDMI-1=HDMI-0
+HDMI-1=HDMI-1
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+splitterSizes=1255,642
+
+[Viewer]
+3440x1440 screen: Height=214
+3440x1440 screen: Width=242
+3440x1440 screen: XPosition=19
+3440x1440 screen: YPosition=82
+HDMI-0=HDMI-0
+ToolBarsMovable=Disabled

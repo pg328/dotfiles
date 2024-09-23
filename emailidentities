@@ -1,0 +1,12 @@
+[General]
+Default Identity=911678100
+
+[Identity #0]
+Default Domain=philbot
+Disable Fcc=false
+Identity=Unnamed
+Image Location=
+Inline Signature=
+Override Encryption Defaults=false
+Signature Enabled=false
+uoid=911678100

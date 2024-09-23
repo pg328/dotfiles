@@ -1,0 +1,40 @@
+# vim:fileencoding=utf-8:foldmethod=marker
+
+# https://sw.kovidgoyal.net/kitty/conf/
+
+font_size 14.0
+disable_ligatures never
+font_features FiraCode-Retina +zero +onum
+
+# BEGIN_KITTY_FONTS
+font_family      family='Fira Code' style=Light
+bold_font        family='Fira Code' style=SemiBold
+italic_font      family='Fira Code' style=Light
+bold_italic_font auto
+# END_KITTY_FONTS
+
+show_hyperlink_targets yes
+focus_follows_mouse yes
+enable_audio_bell no
+visual_bell_duration 1.0
+# active_border_color none
+
+macos_option_as_alt yes
+
+# Kitty Prefix
+kitty_mod control+shift
+
+# Reload Kitty Config
+map kitty_mod+r combine : load_config_file : launch --type=overlay sh -c 'echo "kitty config reloaded."; echo; read -r -p "Press Enter to exit"; echo ""'
+
+# Clipboard Copy and Paste
+map ctrl+v paste_from_clipboard
+
+# Firefox Links
+map kittymod+o pass_selection_to_program firefox
+
+
+# BEGIN_KITTY_THEME
+# Floraverse
+include current-theme.conf
+# END_KITTY_THEME

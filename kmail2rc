@@ -1,0 +1,47 @@
+[$Version]
+update_info=webengineurlinterceptoradblock.upd:webengineurlinterceptoradblock_move_settings
+
+[AttachmentView]
+State=\x00\x00\x00\xff\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\xe6\x00\x00\x00\x08\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\xff\xff\xff\xff\x00\x00\x00\x81\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\xc8\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00r\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00r\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00r\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00r\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00r\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00r\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00r\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03\xe8\x00\x00\x00\x00r\x00\x00\x00\x00
+
+[Composer]
+3440x1440 screen: Height=1440
+3440x1440 screen: Width=3440
+3440x1440 screen: Window-Maximized=true
+3440x1440 screen: XPosition=0
+3440x1440 screen: YPosition=0
+HDMI-0=HDMI-0
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+previous-fcc=6
+previous-identity=911678100
+
+[EmoticonRecentUsed]
+Recents=
+
+[General]
+Recent Addresses=
+first-start=false
+
+[Geometry]
+composer=1703,1370
+
+[Internal]
+PreviousNewFeaturesMD5=+VHbmgibtU0LHxlCgJnkVQ==
+
+[Main Window]
+RestorePositionForNextInstance=false
+
+[Migratekde4]
+Version=1
+
+[Separate Reader Window]
+1440x3440 screen: Height=3350
+1440x3440 screen: Width=692
+1440x3440 screen: XPosition=19
+1440x3440 screen: YPosition=69
+HDMI-0=HDMI-0
+MenuBar=Disabled
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAAAAArQAAAyzAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled

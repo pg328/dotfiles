@@ -1,0 +1,13 @@
+#!/bin/bash
+pkill dunst
+dunst -config ~/.config/dunst/dunstrc &
+
+notify-send -u critical -a AppName "Test 1" "Critical Test 1"
+notify-send -u normal -a AppName "Test 2" "Normal Test 2"
+notify-send -u low -a AppName "Test 3" "Low Test 3"
+notify-send -u critical -a AppName "Test 4" "CriTical test 4"
+notify-send -u normal -a AppName "Test 5" "Normal Test 5"
+notify-send -u low -a AppName "Test 6" "Low Test 6"
+notify-send -u critical -a AppName "Test 7" "CriTical test 7"
+notify-send -u normal -a AppName "Test 8" "Normal Test 8"
+notify-send -u low -a AppName "Test 9" "Low Test 9"

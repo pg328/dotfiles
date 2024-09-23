@@ -1,0 +1,6 @@
+[Plugins]
+kdeconnect_mousepadEnabled=true
+kdeconnect_remotecontrolEnabled=true
+kdeconnect_remotekeyboardEnabled=true
+kdeconnect_screensaver_inhibitEnabled=true
+kdeconnect_sendnotificationsEnabled=true

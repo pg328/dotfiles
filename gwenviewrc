@@ -1,0 +1,25 @@
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[General]
+LastUsedVersion=210800
+
+[MainWindow]
+3440x1440 screen: Height=1386
+3440x1440 screen: Width=3440
+3440x1440 screen: Window-Maximized=true
+3440x1440 screen: XPosition=0
+3440x1440 screen: YPosition=0
+DP-0=DP-0
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAADXAAAAUSAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/dotfiles-2.0/screenshots/firefox.png
+File2[$e]=$HOME/Downloads/zmk_newest/ZMK config layout images/sys.png
+Name1[$e]=firefox.png
+Name2[$e]=sys.png
+
+[SideBar]
+InformationSplitterSizes=210,245

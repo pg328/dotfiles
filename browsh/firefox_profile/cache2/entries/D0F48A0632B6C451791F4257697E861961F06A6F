@@ -1,0 +1,1396 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; object-src 'none'; script-src resource: chrome:; connect-src https:; img-src https: data: blob: chrome:; style-src 'unsafe-inline';">
+    <meta name="color-scheme" content="light dark">
+    <title data-l10n-id="newtab-page-title"></title>
+    <link rel="icon" type="image/png" href="chrome://branding/content/icon32.png"/>
+    <link rel="localization" href="branding/brand.ftl" />
+    <link rel="localization" href="toolkit/branding/brandings.ftl" />
+    <link rel="localization" href="browser/newtab/newtab.ftl" />
+    <link rel="stylesheet" href="chrome://browser/content/contentSearchUI.css" />
+    <link rel="stylesheet" href="chrome://activity-stream/content/css/activity-stream.css" />
+  </head>
+  <!-- Cached: Tue, 05 Sep 2023 21:41:27 GMT -->
+  <body class="activity-stream">
+    <div id="header-asrouter-container" role="presentation"></div>
+    <div id="root">
+      <div><span><button class="icon icon-settings personalize-button" data-l10n-id="newtab-personalize-icon-label"></button><div class="customize-menu" role="dialog" data-l10n-id="newtab-personalize-dialog-label"><button class="close-button" data-l10n-id="newtab-custom-close-button"></button><div></div><div class="home-section"><div id="shortcuts-section" class="section"><label class="switch"><input type="checkbox" id="shortcuts-toggle" checked="" preference="feeds.topsites" aria-labelledby="custom-shortcuts-title" aria-describedby="custom-shortcuts-subtitle" eventSource="TOP_SITES"/><span class="slider" role="presentation"></span></label><div><h2 id="custom-shortcuts-title" class="title"><label for="shortcuts-toggle" data-l10n-id="newtab-custom-shortcuts-title"></label></h2><p id="custom-shortcuts-subtitle" class="subtitle" data-l10n-id="newtab-custom-shortcuts-subtitle"></p><div class="more-info-top-wrapper"><div class="more-information"><select id="row-selector" class="selector" name="row-count" preference="topSitesRows" aria-labelledby="custom-shortcuts-title"><option selected="" value="1" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 1}"></option><option value="2" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 2}"></option><option value="3" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 3}"></option><option value="4" data-l10n-id="newtab-custom-row-selector" data-l10n-args="{&quot;num&quot;: 4}"></option></select><div class="check-wrapper" role="presentation"><input type="checkbox" id="sponsored-shortcuts" class="sponsored-checkbox" checked="" preference="showSponsoredTopSites" eventSource="SPONSORED_TOP_SITES"/><label class="sponsored" for="sponsored-shortcuts" data-l10n-id="newtab-custom-sponsored-sites"></label></div></div></div></div></div><div id="pocket-section" class="section"><label class="switch"><input type="checkbox" id="pocket-toggle" checked="" preference="feeds.section.topstories" aria-labelledby="custom-pocket-title" aria-describedby="custom-pocket-subtitle" eventSource="TOP_STORIES"/><span class="slider" role="presentation"></span></label><div><h2 id="custom-pocket-title" class="title"><label for="pocket-toggle" data-l10n-id="newtab-custom-pocket-title"></label></h2><p id="custom-pocket-subtitle" class="subtitle" data-l10n-id="newtab-custom-pocket-subtitle"></p><div class="more-info-pocket-wrapper"><div class="more-information"><div class="check-wrapper" role="presentation"><input type="checkbox" id="sponsored-pocket" class="sponsored-checkbox" checked="" preference="showSponsored" eventSource="POCKET_SPOCS"/><label class="sponsored" for="sponsored-pocket" data-l10n-id="newtab-custom-pocket-sponsored"></label></div></div></div></div></div><div id="recent-section" class="section"><label class="switch"><input type="checkbox" id="highlights-toggle" preference="feeds.section.highlights" eventSource="HIGHLIGHTS" aria-labelledby="custom-recent-title" aria-describedby="custom-recent-subtitle"/><span class="slider" role="presentation"></span></label><div><h2 id="custom-recent-title" class="title"><label for="highlights-toggle" data-l10n-id="newtab-custom-recent-title"></label></h2><p id="custom-recent-subtitle" class="subtitle" data-l10n-id="newtab-custom-recent-subtitle"></p></div></div><span class="divider" role="separator"></span><div><button id="settings-link" class="external-link" data-l10n-id="newtab-custom-settings"></button></div></div></div></span><div class="outer-wrapper ds-outer-wrapper-search-alignment ds-outer-wrapper-breakpoint-override visible-logo"><main class=""><div class="non-collapsible-section"><div class="search-wrapper"><div class="logo-and-wordmark"><div class="logo"></div><div class="wordmark"></div></div><div class="search-inner-wrapper"><button class="search-handoff-button" data-l10n-id="newtab-search-box-handoff-input" data-l10n-args="{&quot;engine&quot;: &quot;Google&quot;}" tabindex="-1"><div class="fake-textbox" data-l10n-id="newtab-search-box-handoff-text" data-l10n-args="{&quot;engine&quot;: &quot;Google&quot;}"></div><input type="search" class="fake-editable" tabindex="-1" aria-hidden="true"/><div class="fake-caret"></div></button></div></div></div><div class="body-wrapper on"><div class="discovery-stream ds-layout"><div class="ds-column ds-column-12"><div class="ds-column-grid"><div><div class="ds-top-sites"><section class="collapsible-section top-sites" data-section-id="topsites"><div class="section-top-bar"><h3 class="section-title-container " style="visibility:hidden"><span class="section-title"><span data-l10n-id="newtab-section-header-topsites"></span></span><span class="learn-more-link-wrapper"></span></h3></div><div><ul class="top-sites-list"><li class="top-site-outer search-shortcut"><div class="top-site-inner"><a class="top-site-button" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="@"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/amazon@2x.png)"></div></div><div class="top-site-icon search-topsite"></div></div><div class="title has-icon pinned"><span dir="auto"><div class="icon icon-pin-small"></div>@amazon<span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;@amazon&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.brow.sh/" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="b"><div class="top-site-icon rich-icon" style="background-image:url(data:image/png;base64,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)"></div></div></div><div class="title"><span dir="auto">brow<span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;brow&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.youtube.com/" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="Y"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/youtube-com@2x.png)"></div></div></div><div class="title"><span dir="auto">YouTube<span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;YouTube&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.facebook.com/" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="F"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/facebook-com@2x.png)"></div></div></div><div class="title"><span dir="auto">Facebook<span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Facebook&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.reddit.com/" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="R"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/reddit-com@2x.png)"></div></div></div><div class="title"><span dir="auto">Reddit<span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Reddit&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer"><div class="top-site-inner"><a class="top-site-button" href="https://www.bbc.co.uk/" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="B"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/bbc-uk@2x.png)"></div></div></div><div class="title"><span dir="auto">BBC<span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;BBC&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer hide-for-narrow"><div class="top-site-inner"><a class="top-site-button" href="https://www.ebay.co.uk/" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper" data-fallback="e"><div class="top-site-icon rich-icon" style="background-image:url(chrome://activity-stream/content/data/content/tippytop/images/ebay@2x.png)"></div></div></div><div class="title"><span dir="auto">eBay<span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></span></div></a><div><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;eBay&quot;}" class="context-menu-button icon"></button></div><div class="topsite-impression-observer"></div></div></li><li class="top-site-outer placeholder hide-for-narrow"><div class="top-site-inner"><a class="top-site-button" tabindex="0" draggable="true" data-is-sponsored-link="false"><div class="tile" aria-hidden="true"><div class="icon-wrapper"><div class=""></div></div></div><div class="title"><span dir="auto"><br/><span class="sponsored-label" data-l10n-id="newtab-topsite-sponsored"></span></span></div></a><button aria-haspopup="dialog" class="context-menu-button edit-button icon" data-l10n-id="newtab-menu-topsites-placeholder-tooltip"></button><div class="topsite-impression-observer"></div></div></li></ul><div class="edit-topsites-wrapper"></div></div></section></div></div></div></div><style data-styles="[[null]]"></style></div><section class="collapsible-section ds-layout" data-section-id="topstories"><div class="section-top-bar"><h3 class="section-title-container "><span class="section-title"><span data-l10n-args="{&quot;provider&quot;:&quot;Pocket&quot;}" data-l10n-id="newtab-section-header-pocket"></span></span><span class="learn-more-link-wrapper"><span class="learn-more-link"><a href="https://getpocket.com/firefox/new_tab_learn_more" data-l10n-id="newtab-pocket-learn-more"></a></span></span></h3></div><div><div class="discovery-stream ds-layout"><div class="ds-column ds-column-12"><div class="ds-column-grid"><div><div><div class="ds-card-grid    ds-card-grid-include-descriptions "><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.theguardian.com/society/2023/aug/28/unspoken-grief-childless-men?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/e5ff2b00-1ad4-4468-96a8-92cca554593a.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe5ff2b00-1ad4-4468-96a8-92cca554593a.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe5ff2b00-1ad4-4468-96a8-92cca554593a.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe5ff2b00-1ad4-4468-96a8-92cca554593a.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe5ff2b00-1ad4-4468-96a8-92cca554593a.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe5ff2b00-1ad4-4468-96a8-92cca554593a.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe5ff2b00-1ad4-4468-96a8-92cca554593a.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;The Guardian&quot;,&quot;timeToRead&quot;:3}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="‘I just assumed it would happen’: the unspoken grief of childless men" class="title clamp">‘I just assumed it would happen’: the unspoken grief of childless men</header><p class="excerpt clamp">Father’s Day is dangerous for Robert Nurden. Childless not through choice but, as he puts it, “complacency, bad luck, bad judgment”, he tries to stay indoors and ignore the family celebrations outside. But one year, he went for a walk. “I met family after family.”</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;‘I just assumed it would happen’: the unspoken grief of childless men&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://event.trustconference.com/event/7fd73801-77ad-4c92-a091-6df31d1e07e0/summary?tm=FRJRS2C-OwKeMrfNQBmn4hofyExZ6AcLCeYDSz9BuR8&amp;locale=en-US&amp;utm_source=partner-comms&amp;utm_medium=email&amp;utm_campaign=tc2023&amp;utm_content=mozilla" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s.zkcdn.net/Advertisers/bc47ea009215418596259222df0a1480.jpg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs.zkcdn.net%2FAdvertisers%2Fbc47ea009215418596259222df0a1480.jpg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs.zkcdn.net%2FAdvertisers%2Fbc47ea009215418596259222df0a1480.jpg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs.zkcdn.net%2FAdvertisers%2Fbc47ea009215418596259222df0a1480.jpg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs.zkcdn.net%2FAdvertisers%2Fbc47ea009215418596259222df0a1480.jpg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs.zkcdn.net%2FAdvertisers%2Fbc47ea009215418596259222df0a1480.jpg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs.zkcdn.net%2FAdvertisers%2Fbc47ea009215418596259222df0a1480.jpg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp">event.trustconference.com</p><header title="Press Freedom Is Under Threat With a Record Number of Journalists Behind Bars" class="title clamp">Press Freedom Is Under Threat With a Record Number of Journalists Behind Bars</header><p class="excerpt clamp">Hear from experts tackling some of the gravest issues facing democracy at Trust Conference on 19-20 October.</p></div><div class="story-footer"><p class="story-sponsored-label  clamp">Sponsor: Thomson Reuters Foundation</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Press Freedom Is Under Threat With a Record Number of Journalists Behind Bars&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://getpocket.com/explore/item/how-to-survive-isolation-according-to-an-astronaut-who-spent-215-straight-days-in-spaceflight?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/11361f57-a32e-43d5-9751-f5dd83a6feaf.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F11361f57-a32e-43d5-9751-f5dd83a6feaf.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F11361f57-a32e-43d5-9751-f5dd83a6feaf.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F11361f57-a32e-43d5-9751-f5dd83a6feaf.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F11361f57-a32e-43d5-9751-f5dd83a6feaf.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F11361f57-a32e-43d5-9751-f5dd83a6feaf.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F11361f57-a32e-43d5-9751-f5dd83a6feaf.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;Esquire&quot;,&quot;timeToRead&quot;:9}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="How to Survive Isolation, According to an Astronaut Who Spent 215 Days in Spaceflight" class="title clamp">How to Survive Isolation, According to an Astronaut Who Spent 215 Days in Spaceflight</header><p class="excerpt clamp">Michael López-Alegría describes how he and his fellow astronauts kept from boiling over while they took in the beauty (and fragility) of Earth.</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;How to Survive Isolation, According to an Astronaut Who Spent 215 Days in Spaceflight&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.theguardian.com/technology/2023/aug/27/staying-cool-without-air-con-warming-climate-crisis-planet?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/d02995b2-b32f-4d78-afa8-a5b4cecdbe07.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd02995b2-b32f-4d78-afa8-a5b4cecdbe07.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd02995b2-b32f-4d78-afa8-a5b4cecdbe07.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd02995b2-b32f-4d78-afa8-a5b4cecdbe07.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd02995b2-b32f-4d78-afa8-a5b4cecdbe07.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd02995b2-b32f-4d78-afa8-a5b4cecdbe07.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd02995b2-b32f-4d78-afa8-a5b4cecdbe07.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;The Observer&quot;,&quot;timeToRead&quot;:8}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="How to stay cool without air con – and help take some heat off the planet" class="title clamp">How to stay cool without air con – and help take some heat off the planet</header><p class="excerpt clamp">“I can honestly say it’s the best thing I’ve ever spent my money on,” says 30-year-old Stephen about the unassuming waist-high plastic pillar that sits in the bedroom of his converted bungalow in Nottinghamshire.</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;How to stay cool without air con – and help take some heat off the planet&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.bbc.com/sport/athletics/66615089?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4f6edca5-0ffe-4905-aa0c-c42bfa1a2d7f.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4f6edca5-0ffe-4905-aa0c-c42bfa1a2d7f.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4f6edca5-0ffe-4905-aa0c-c42bfa1a2d7f.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4f6edca5-0ffe-4905-aa0c-c42bfa1a2d7f.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4f6edca5-0ffe-4905-aa0c-c42bfa1a2d7f.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4f6edca5-0ffe-4905-aa0c-c42bfa1a2d7f.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4f6edca5-0ffe-4905-aa0c-c42bfa1a2d7f.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;BBC&quot;,&quot;timeToRead&quot;:14}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="Bobbi Gibb: The Boston Marathon pioneer who raced a lie" class="title clamp">Bobbi Gibb: The Boston Marathon pioneer who raced a lie</header><p class="excerpt clamp">Those nine words leapt off the paper like a slap to the face. &quot;The audacity,&quot; thought Roberta &#x27;Bobbi&#x27; Gibb.</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Bobbi Gibb: The Boston Marathon pioneer who raced a lie&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://thetakeout.com/self-checkout-rules-of-etiquette-alcohol-produce-kids-1850756581?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/8e50f936-e66d-4027-a3e8-a9796baf0289.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8e50f936-e66d-4027-a3e8-a9796baf0289.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8e50f936-e66d-4027-a3e8-a9796baf0289.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8e50f936-e66d-4027-a3e8-a9796baf0289.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8e50f936-e66d-4027-a3e8-a9796baf0289.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8e50f936-e66d-4027-a3e8-a9796baf0289.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8e50f936-e66d-4027-a3e8-a9796baf0289.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;The Takeout&quot;,&quot;timeToRead&quot;:10}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="The 8 Unbreakable Rules of Self-Checkout Etiquette" class="title clamp">The 8 Unbreakable Rules of Self-Checkout Etiquette</header><p class="excerpt clamp">Self-checkout can be the worst part about grocery shopping. Here’s how to make it better.</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;The 8 Unbreakable Rules of Self-Checkout Etiquette&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.nature.com/articles/d41586-023-02712-4?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/d17e25cb-18e1-4566-8f49-3ebce18000d5.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd17e25cb-18e1-4566-8f49-3ebce18000d5.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd17e25cb-18e1-4566-8f49-3ebce18000d5.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd17e25cb-18e1-4566-8f49-3ebce18000d5.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd17e25cb-18e1-4566-8f49-3ebce18000d5.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd17e25cb-18e1-4566-8f49-3ebce18000d5.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd17e25cb-18e1-4566-8f49-3ebce18000d5.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;Nature Publishing Group&quot;,&quot;timeToRead&quot;:4}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="Human Ancestors Nearly Went Extinct 900,000 Years Ago" class="title clamp">Human Ancestors Nearly Went Extinct 900,000 Years Ago</header><p class="excerpt clamp">A new technique analysing modern genetic data suggests that pre-humans survived in a group of only 1,280 individuals.</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Human Ancestors Nearly Went Extinct 900,000 Years Ago&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.livingetc.com/advice/this-low-effort-vegetable-gardening-method-is-genius-way-to-grow-crops-in-a-small-backyard?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4913a1c2-c83b-424d-88da-13df0d3321ed.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4913a1c2-c83b-424d-88da-13df0d3321ed.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4913a1c2-c83b-424d-88da-13df0d3321ed.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4913a1c2-c83b-424d-88da-13df0d3321ed.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4913a1c2-c83b-424d-88da-13df0d3321ed.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4913a1c2-c83b-424d-88da-13df0d3321ed.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4913a1c2-c83b-424d-88da-13df0d3321ed.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;livingetc.com&quot;,&quot;timeToRead&quot;:6}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="This low-effort vegetable gardening method is genius way to grow crops in a small backyard" class="title clamp">This low-effort vegetable gardening method is genius way to grow crops in a small backyard</header><p class="excerpt clamp">Do you want an easy way into gardening that doesn&#x27;t require tonnes of space? Fancy growing a no-dig edible garden that incorporates all your favorite veg? Do you want it to yield the best harvest possible?</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;This low-effort vegetable gardening method is genius way to grow crops in a small backyard&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.glamour.com/story/is-coffee-good-for-you?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/f15d259d-35d4-48a4-8ab6-38041ba601d3.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff15d259d-35d4-48a4-8ab6-38041ba601d3.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff15d259d-35d4-48a4-8ab6-38041ba601d3.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff15d259d-35d4-48a4-8ab6-38041ba601d3.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff15d259d-35d4-48a4-8ab6-38041ba601d3.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff15d259d-35d4-48a4-8ab6-38041ba601d3.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff15d259d-35d4-48a4-8ab6-38041ba601d3.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;Glamour&quot;,&quot;timeToRead&quot;:4}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="Is Coffee Good for You? A Dermatologist, a Dietitian, and an Endocrinologist Weigh In" class="title clamp">Is Coffee Good for You? A Dermatologist, a Dietitian, and an Endocrinologist Weigh In</header><p class="excerpt clamp">Cappuccino, Americano, latte, and cortado—I love them all. For a drink that’s been around for centuries, our obsession with coffee has yet to die down.</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Is Coffee Good for You? A Dermatologist, a Dietitian, and an Endocrinologist Weigh In&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.spectator.co.uk/article/the-forgotten-end-of-the-second-world-war/?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/8988424b-5601-4487-b6ce-ec55fb0a55ab.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8988424b-5601-4487-b6ce-ec55fb0a55ab.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8988424b-5601-4487-b6ce-ec55fb0a55ab.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8988424b-5601-4487-b6ce-ec55fb0a55ab.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8988424b-5601-4487-b6ce-ec55fb0a55ab.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8988424b-5601-4487-b6ce-ec55fb0a55ab.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8988424b-5601-4487-b6ce-ec55fb0a55ab.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;The Spectator&quot;,&quot;timeToRead&quot;:9}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="The forgotten end of the second world war" class="title clamp">The forgotten end of the second world war</header><p class="excerpt clamp">Two weeks ago, VJ day (Victory over Japan day) celebrated the end of the Pacific War. On 15 August 1945 Emperor Hirohito, with his high-pitched voice and arcane royal language, which was heard by his people for the first time, announced Japan’s surrender.</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;The forgotten end of the second world war&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://thecritic.co.uk/tolkien-50-years-on/?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/da37ba01-2943-47b0-ac48-b44bd759b354.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fda37ba01-2943-47b0-ac48-b44bd759b354.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fda37ba01-2943-47b0-ac48-b44bd759b354.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fda37ba01-2943-47b0-ac48-b44bd759b354.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fda37ba01-2943-47b0-ac48-b44bd759b354.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fda37ba01-2943-47b0-ac48-b44bd759b354.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fda37ba01-2943-47b0-ac48-b44bd759b354.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;The Critic&quot;,&quot;timeToRead&quot;:11}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="Tolkien, 50 years on" class="title clamp">Tolkien, 50 years on</header><p class="excerpt clamp">The true scale of his legacy is gradually becoming apparent.</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Tolkien, 50 years on&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.independent.co.uk/travel/europe/romania/rail-draculas-castle-train-romania-transylvania-b2396744.html?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/e204245d-2c4c-44fc-add1-e015dfb931d8.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe204245d-2c4c-44fc-add1-e015dfb931d8.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe204245d-2c4c-44fc-add1-e015dfb931d8.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe204245d-2c4c-44fc-add1-e015dfb931d8.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe204245d-2c4c-44fc-add1-e015dfb931d8.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe204245d-2c4c-44fc-add1-e015dfb931d8.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe204245d-2c4c-44fc-add1-e015dfb931d8.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;The Independent&quot;,&quot;timeToRead&quot;:6}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="St Pancras to Dracula’s Castle by train is three holidays in one" class="title clamp">St Pancras to Dracula’s Castle by train is three holidays in one</header><p class="excerpt clamp">They say a journey of a thousand miles begins with a single step. That step, for me, comes at 5am on a Tuesday morning in central London. As first light breaks over Bloomsbury’s Cartwright Gardens, a blackbird starts singing from the treetops.</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;St Pancras to Dracula’s Castle by train is three holidays in one&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.newyorker.com/news/letter-from-the-south/how-a-man-in-prison-stole-millions-from-billionaires?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/ff23bb1a-766e-468c-ba77-ded01d669afb.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fff23bb1a-766e-468c-ba77-ded01d669afb.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fff23bb1a-766e-468c-ba77-ded01d669afb.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fff23bb1a-766e-468c-ba77-ded01d669afb.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fff23bb1a-766e-468c-ba77-ded01d669afb.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fff23bb1a-766e-468c-ba77-ded01d669afb.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fff23bb1a-766e-468c-ba77-ded01d669afb.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;The New Yorker&quot;,&quot;timeToRead&quot;:30}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="How a Man in Prison Stole Millions from Billionaires" class="title clamp">How a Man in Prison Stole Millions from Billionaires</header><p class="excerpt clamp">With smuggled cell phones and a handful of accomplices, Arthur Lee Cofield, Jr., took money from large bank accounts and bought houses, cars, clothes, and gold.</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;How a Man in Prison Stole Millions from Billionaires&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.smh.com.au/traveller/inspiration/the-49-modern-wonders-of-the-world-as-named-by-the-experts-20230821-p5dy3h.html?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/2836a021-28af-4c69-96bc-55783bf32ef7.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F2836a021-28af-4c69-96bc-55783bf32ef7.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F2836a021-28af-4c69-96bc-55783bf32ef7.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F2836a021-28af-4c69-96bc-55783bf32ef7.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F2836a021-28af-4c69-96bc-55783bf32ef7.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F2836a021-28af-4c69-96bc-55783bf32ef7.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F2836a021-28af-4c69-96bc-55783bf32ef7.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;The Sydney Morning Herald&quot;,&quot;timeToRead&quot;:18}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="The 49 modern wonders of the world, as named by the experts" class="title clamp">The 49 modern wonders of the world, as named by the experts</header><p class="excerpt clamp">Authorities in various disciplines, encompassing food, design, art and more, have complied a list of must-visit places that will make your heart soar. </p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;The 49 modern wonders of the world, as named by the experts&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.cnn.com/2023/09/02/asia/japan-speed-dating-parents-low-fertility-intl-hnk/index.html?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/f0490d8e-6d9d-41a1-8716-4e67d3edeec0.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff0490d8e-6d9d-41a1-8716-4e67d3edeec0.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff0490d8e-6d9d-41a1-8716-4e67d3edeec0.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff0490d8e-6d9d-41a1-8716-4e67d3edeec0.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff0490d8e-6d9d-41a1-8716-4e67d3edeec0.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff0490d8e-6d9d-41a1-8716-4e67d3edeec0.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff0490d8e-6d9d-41a1-8716-4e67d3edeec0.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;CNN&quot;,&quot;timeToRead&quot;:8}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="In Japan, the young find dating so hard their parents are doing it for them" class="title clamp">In Japan, the young find dating so hard their parents are doing it for them</header><p class="excerpt clamp">It’s a steamy summer afternoon in the Japanese city of Osaka, where a group of around 60 men and women have gathered for a session of “omiai,” or matchmaking, to find true love.</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;In Japan, the young find dating so hard their parents are doing it for them&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.theatlantic.com/family/archive/2023/08/childhood-friendship-benefits-play/675158/?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/3f3c982e-6e9c-471b-91f3-adcfde22ae91.png" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F3f3c982e-6e9c-471b-91f3-adcfde22ae91.png 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F3f3c982e-6e9c-471b-91f3-adcfde22ae91.png 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F3f3c982e-6e9c-471b-91f3-adcfde22ae91.png 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F3f3c982e-6e9c-471b-91f3-adcfde22ae91.png 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F3f3c982e-6e9c-471b-91f3-adcfde22ae91.png 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F3f3c982e-6e9c-471b-91f3-adcfde22ae91.png 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;The Atlantic&quot;,&quot;timeToRead&quot;:8}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="What Adults Forget About Friendship" class="title clamp">What Adults Forget About Friendship</header><p class="excerpt clamp">Just catching up can feel stale. Playing and wasting time together like kids do are how you make memories.</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;What Adults Forget About Friendship&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.politico.com/news/magazine/2023/09/01/america-life-expectancy-regions-00113369?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/9e7c17d4-d026-49c5-95a6-afc6b73ec8b9.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9e7c17d4-d026-49c5-95a6-afc6b73ec8b9.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9e7c17d4-d026-49c5-95a6-afc6b73ec8b9.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9e7c17d4-d026-49c5-95a6-afc6b73ec8b9.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9e7c17d4-d026-49c5-95a6-afc6b73ec8b9.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9e7c17d4-d026-49c5-95a6-afc6b73ec8b9.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9e7c17d4-d026-49c5-95a6-afc6b73ec8b9.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;POLITICO&quot;,&quot;timeToRead&quot;:16}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="America’s Surprising Partisan Divide on Life Expectancy" class="title clamp">America’s Surprising Partisan Divide on Life Expectancy</header><p class="excerpt clamp">It’s not poverty or diet. Centuries-old settlement patterns — and the attitudes they spawned about government’s role in public health — are to blame.</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;America’s Surprising Partisan Divide on Life Expectancy&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://getpocket.com/collections/how-to-survive-embarrassment-when-youd-rather-crawl-into-a-hole?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4312875d-c047-42e1-9920-ffb46b7da16c.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4312875d-c047-42e1-9920-ffb46b7da16c.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4312875d-c047-42e1-9920-ffb46b7da16c.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4312875d-c047-42e1-9920-ffb46b7da16c.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4312875d-c047-42e1-9920-ffb46b7da16c.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4312875d-c047-42e1-9920-ffb46b7da16c.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4312875d-c047-42e1-9920-ffb46b7da16c.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp">Pocket Collections</p><header title="How to Survive Embarrassment When You’d Rather Crawl Into a Hole" class="title clamp">How to Survive Embarrassment When You’d Rather Crawl Into a Hole</header><p class="excerpt clamp">The science of shame, how to find the humor in your humiliation, and useful tips to get through some of life’s most mortifying moments.</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;How to Survive Embarrassment When You’d Rather Crawl Into a Hole&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.quantamagazine.org/why-mathematical-proof-is-a-social-compact-20230831/?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/fd1a9e1f-57a6-4ceb-934f-3a8545fc9670.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ffd1a9e1f-57a6-4ceb-934f-3a8545fc9670.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ffd1a9e1f-57a6-4ceb-934f-3a8545fc9670.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ffd1a9e1f-57a6-4ceb-934f-3a8545fc9670.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ffd1a9e1f-57a6-4ceb-934f-3a8545fc9670.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ffd1a9e1f-57a6-4ceb-934f-3a8545fc9670.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ffd1a9e1f-57a6-4ceb-934f-3a8545fc9670.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;Quanta Magazine&quot;,&quot;timeToRead&quot;:13}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="Why Mathematical Proof Is a Social Compact" class="title clamp">Why Mathematical Proof Is a Social Compact</header><p class="excerpt clamp">Number theorist Andrew Granville on what mathematics really is — and why objectivity is never quite within reach.</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Why Mathematical Proof Is a Social Compact&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.vanityfair.com/style/2023/08/kyle-deschanel-the-rothschild-who-wasnt?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4518411e-d1f3-4ff9-9bb6-b5d5cf2fc3d3.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4518411e-d1f3-4ff9-9bb6-b5d5cf2fc3d3.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4518411e-d1f3-4ff9-9bb6-b5d5cf2fc3d3.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4518411e-d1f3-4ff9-9bb6-b5d5cf2fc3d3.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4518411e-d1f3-4ff9-9bb6-b5d5cf2fc3d3.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4518411e-d1f3-4ff9-9bb6-b5d5cf2fc3d3.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4518411e-d1f3-4ff9-9bb6-b5d5cf2fc3d3.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;Vanity Fair&quot;,&quot;timeToRead&quot;:41}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="Kyle Deschanel, the Rothschild Who Wasn’t" class="title clamp">Kyle Deschanel, the Rothschild Who Wasn’t</header><p class="excerpt clamp">When Kyle de Rothschild Deschanel arrived in New York nightlife and venture fundraising circles a few years ago, he was an instant hit. Equal parts charm, enterprise, and fabulous family wealth, he seemed to live on a 24/7 carousel of mega-dollar deals and raucous parties. It was almost as if he had conjured his entire existence out of thin air. What if he had?</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;Kyle Deschanel, the Rothschild Who Wasn’t&quot;}" class="context-menu-button icon"></button></div></div></div></div><div class="ds-card   ds-card-title-lines-3 ds-card-desc-lines-3"><a href="https://www.vox.com/climate/2023/8/31/23849730/climate-public-views-emotions-hope-concern?utm_source=pocket-newtab-en-gb" class="ds-card-link"><div class="img-wrapper"><picture class="ds-image
+       img
+      
+      
+    "><img loading="lazy" crossorigin="anonymous" sizes="(min-width: 1122px) 296px,(min-width: 866px) 218px,(max-width: 610px) 202px,202px" src="https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4856c50c-173f-4272-aec4-bd36b4009d96.jpeg" srcSet="https://img-getpocket.cdn.mozilla.net/296x148/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4856c50c-173f-4272-aec4-bd36b4009d96.jpeg 296w,https://img-getpocket.cdn.mozilla.net/592x296/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4856c50c-173f-4272-aec4-bd36b4009d96.jpeg 592w,https://img-getpocket.cdn.mozilla.net/218x109/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4856c50c-173f-4272-aec4-bd36b4009d96.jpeg 218w,https://img-getpocket.cdn.mozilla.net/436x218/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4856c50c-173f-4272-aec4-bd36b4009d96.jpeg 436w,https://img-getpocket.cdn.mozilla.net/202x101/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4856c50c-173f-4272-aec4-bd36b4009d96.jpeg 202w,https://img-getpocket.cdn.mozilla.net/404x202/filters:format(jpeg):quality(60):no_upscale():strip_exif()/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4856c50c-173f-4272-aec4-bd36b4009d96.jpeg 404w"/></picture></div><div class="meta"><div class="info-wrap"><p class="source clamp time-to-read"><span data-l10n-args="{&quot;source&quot;:&quot;Vox&quot;,&quot;timeToRead&quot;:10}" data-l10n-id="newtab-label-source-read-time"></span></p><header title="There’s Been a Shift in How We Think About Climate Change" class="title clamp">There’s Been a Shift in How We Think About Climate Change</header><p class="excerpt clamp">Our actions today will determine just how bad climate change will become. But which emotions best drive a person to become politically active? Hope? Anger? Persevering through complacency? What if the fundamental challenge is actually our attention?</p></div></div><div class="impression-observer"></div></a><div class="card-stp-button-hover-background"><div class="card-stp-button-position-wrapper"><button class="card-stp-button"><span class="story-badge-icon icon icon-pocket-save"></span><span data-l10n-id="newtab-pocket-save"></span></button><div class="context-menu-position-container"><button aria-haspopup="true" data-l10n-id="newtab-menu-content-tooltip" data-l10n-args="{&quot;title&quot;:&quot;There’s Been a Shift in How We Think About Climate Change&quot;}" class="context-menu-button icon"></button></div></div></div></div></div></div></div><div><div class="ds-navigation ds-navigation-left-align "><span class="ds-navigation-header" data-l10n-id="newtab-pocket-read-more"></span><ul><li><a href="https://getpocket.com/explore/self-improvement?utm_source=pocket-newtab">Self improvement</a></li><li><a href="https://getpocket.com/explore/food?utm_source=pocket-newtab">Food</a></li><li><a href="https://getpocket.com/explore/entertainment?utm_source=pocket-newtab">Entertainment</a></li><li><a href="https://getpocket.com/explore/health?utm_source=pocket-newtab">Health &amp; fitness</a></li><li><a href="https://getpocket.com/explore/science?utm_source=pocket-newtab">Science</a></li><li><a href="https://getpocket.com/explore?utm_source=pocket-newtab">More recommendations ›</a></li></ul><a href="https://www.mozilla.org/privacy/firefox/#suggest-relevant-content" class="ds-navigation-privacy"><span data-l10n-id="newtab-section-menu-privacy-notice"></span></a></div></div></div></div><style data-styles="[[null,{&quot;.ds-navigation&quot;:&quot;margin-top: -10px;&quot;}]]"></style></div></div></section><div class="discovery-stream ds-layout"><div class="ds-column ds-column-12"><div class="ds-column-grid"><div></div></div></div><style data-styles="[[null]]"></style></div></div></main></div></div>
+    </div>
+    <div id="footer-asrouter-container" role="presentation"></div>
+    <script src="about:home?jscache"></script>
+  </body>
+</html>
+window.__FROM_STARTUP_CACHE__ = true;
+window.__STARTUP_STATE__ = {
+	"TopSites": {
+		"initialized": true,
+		"rows": [
+			{
+				"isDefault": false,
+				"url": "https://amazon.com",
+				"label": "@amazon",
+				"searchTopSite": true,
+				"hostname": "amazon",
+				"isPinned": true,
+				"pinIndex": 0,
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/amazon@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/amazon.ico",
+				"typedBonus": true
+			},
+			{
+				"bookmarkGuid": null,
+				"frecency": 550,
+				"guid": "xKcvpxWbFwI3",
+				"lastVisitDate": 1689332463163,
+				"title": "Browsh",
+				"url": "https://www.brow.sh/",
+				"type": "history",
+				"favicon": "data:image/png;base64,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",
+				"faviconLength": 9317,
+				"faviconRef": "",
+				"faviconSize": 144,
+				"smallFavicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB9VBMVEVwjTdzjzpwjDlwjjlpiDTA6ZgAAABcexeAnz9cehdjgh1aehX//3jlylZeQy7//wBeRC9WOyVKLhZVOiNJLRVJLBZbexZefRhCYRNphDc5WAVfei1uizdujDdefhpdfBlefRpbexZdfBhbexZefRlefRpdfRlZehRcfBdZeRJefRpbexVefRlaehVaehNbexVffhtaexRefhlXeBBYeRJafBRkMz5dQy5dQi1dQi1dQi1eRC5ffhtaehRbexZbexVZehJYbhZPMh1bQCtcQi1cQixcQixdQy1fRTBaehNZeRNZehJWYBhMLxhYPShgRjFfRTBfRC9ZPihXPCZaehRZeRJYeRFYehJMLxhYPSdfRC9dQi1ZPihOMhtLLxdffhxZehNYehFWYBhLLxhYPihgRjFeRC5aQCpUOSJWOyRYaBdMMBlTOCFUOSJUOSJUOSJPMxxILBNgfhxYeRFZehJUVhhKLBdJLBZKLBZKLBZKLBZYdxxRcRNZehFaexRbexZbexZbexZbexZOax5FYxVDYhJZehFbexRffhlRbSBEYxVAXxFQcBFJaRE+XRFKaBdDYhRCYRRDYRRDYRRDYRRfei1cdi1bdi1adS1bdSxcdixYeRFQcRFXeBFYehFNbRFPbxFQcBFZehFAXxFBYBFPcBH///8fG9uiAAAAm3RSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQFZeENEeUiGe2pqem1l00dK01ExxxwfxiYGWW1saBww2JSV1i1g5Pbz9IwblJXVPNfSYGiG+EnWhYbT2MF+1K3rRS/n5DvXz1x0dXAgMozu8/DtjBwv72sZg6KhnS8v5+93X2FgIB6l9/2SHhqn9/6UJBqdsbCuSQEEBQUFAttKhiYAAAABYktHRKa3sBuVAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH4gYdCxAnWfYiEAAAAOBJREFUGNNjYJBhZJJlZmFlgwIGOXkFRSVldg64gIqqmrqGJicXXEBLW0dXT5+bhxcmYGBoZGxiamZuYWllzccPFLCxtbN3cHRydnF1c/cQAAt4enn7+Pr5BwQGBQuCBEJCw8J9IiKjomNi44SAAvEJs2cnJiWnpKalZ2QKwwSysnNy8/LyCwpF2BiKgALFJaVl5RUVFZVVomwM1TVz5s6rratvAILGJjE2huaW1vkLFs5dBAJt7R3iDBKdXd2Ll8xfuBQEenr7GCSl+idMnAQDk6cwsElPnTZ9+gwomDkLAB3fTzYF1xbJAAAAGXRFWHRDb21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yOVQxMToxNjozOSswMjowMGq28QoAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjlUMTE6MTY6MzkrMDI6MDAb60m2AAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC",
+				"smallFaviconLength": 1308,
+				"smallFaviconRef": "",
+				"smallFaviconSize": 16,
+				"hostname": "brow",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.youtube.com/",
+				"hostname": "youtube",
+				"sendAttributionRequest": false,
+				"label": "YouTube",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/youtube-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/youtube-com.png",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.facebook.com/",
+				"hostname": "facebook",
+				"sendAttributionRequest": false,
+				"label": "Facebook",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/facebook-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/facebook-com.ico",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.reddit.com/",
+				"hostname": "reddit",
+				"sendAttributionRequest": false,
+				"label": "Reddit",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/reddit-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/reddit-com.png",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.bbc.co.uk/",
+				"hostname": "bbc",
+				"sendAttributionRequest": false,
+				"label": "BBC",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/bbc-uk@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/bbc-uk.ico",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.ebay.co.uk/",
+				"hostname": "ebay",
+				"sendAttributionRequest": false,
+				"label": "eBay",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/ebay@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/ebay.ico",
+				"typedBonus": true
+			}
+		],
+		"editForm": null,
+		"showSearchShortcutsForm": false,
+		"searchShortcuts": [
+			{
+				"keyword": "@google",
+				"shortURL": "google",
+				"url": "https://google.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/google-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/google-com.ico"
+			},
+			{
+				"keyword": "@amazon",
+				"shortURL": "amazon",
+				"url": "https://amazon.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/amazon@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/amazon.ico"
+			},
+			{
+				"keyword": "@bing",
+				"shortURL": "bing",
+				"url": "https://bing.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/bing-com@2x.svg",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/bing-com.ico"
+			},
+			{
+				"keyword": "@duckduckgo",
+				"shortURL": "duckduckgo",
+				"url": "https://duckduckgo.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/duckduckgo-com@2x.svg",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/duckduckgo-com.ico"
+			},
+			{
+				"keyword": "@ebay",
+				"shortURL": "ebay",
+				"url": "https://ebay.com",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/ebay@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/ebay.ico"
+			},
+			{
+				"keyword": "@wikipedia",
+				"shortURL": "wikipedia",
+				"url": "https://wikipedia.org",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/wikipedia-org@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/wikipedia-org.ico"
+			}
+		],
+		"pref": {
+			"collapsed": false
+		}
+	},
+	"App": {
+		"initialized": true,
+		"locale": "en-US",
+		"isForStartupCache": true,
+		"customizeMenuVisible": false,
+		"links": [
+			{
+				"isDefault": false,
+				"url": "https://amazon.com",
+				"label": "@amazon",
+				"searchTopSite": true,
+				"hostname": "amazon",
+				"isPinned": true,
+				"pinIndex": 0,
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/amazon@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/amazon.ico",
+				"typedBonus": true
+			},
+			{
+				"bookmarkGuid": null,
+				"frecency": 550,
+				"guid": "xKcvpxWbFwI3",
+				"lastVisitDate": 1689332463163,
+				"title": "Browsh",
+				"url": "https://www.brow.sh/",
+				"type": "history",
+				"favicon": "data:image/png;base64,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",
+				"faviconLength": 9317,
+				"faviconRef": "",
+				"faviconSize": 144,
+				"smallFavicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB9VBMVEVwjTdzjzpwjDlwjjlpiDTA6ZgAAABcexeAnz9cehdjgh1aehX//3jlylZeQy7//wBeRC9WOyVKLhZVOiNJLRVJLBZbexZefRhCYRNphDc5WAVfei1uizdujDdefhpdfBlefRpbexZdfBhbexZefRlefRpdfRlZehRcfBdZeRJefRpbexVefRlaehVaehNbexVffhtaexRefhlXeBBYeRJafBRkMz5dQy5dQi1dQi1dQi1eRC5ffhtaehRbexZbexVZehJYbhZPMh1bQCtcQi1cQixcQixdQy1fRTBaehNZeRNZehJWYBhMLxhYPShgRjFfRTBfRC9ZPihXPCZaehRZeRJYeRFYehJMLxhYPSdfRC9dQi1ZPihOMhtLLxdffhxZehNYehFWYBhLLxhYPihgRjFeRC5aQCpUOSJWOyRYaBdMMBlTOCFUOSJUOSJUOSJPMxxILBNgfhxYeRFZehJUVhhKLBdJLBZKLBZKLBZKLBZYdxxRcRNZehFaexRbexZbexZbexZbexZOax5FYxVDYhJZehFbexRffhlRbSBEYxVAXxFQcBFJaRE+XRFKaBdDYhRCYRRDYRRDYRRDYRRfei1cdi1bdi1adS1bdSxcdixYeRFQcRFXeBFYehFNbRFPbxFQcBFZehFAXxFBYBFPcBH///8fG9uiAAAAm3RSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQFZeENEeUiGe2pqem1l00dK01ExxxwfxiYGWW1saBww2JSV1i1g5Pbz9IwblJXVPNfSYGiG+EnWhYbT2MF+1K3rRS/n5DvXz1x0dXAgMozu8/DtjBwv72sZg6KhnS8v5+93X2FgIB6l9/2SHhqn9/6UJBqdsbCuSQEEBQUFAttKhiYAAAABYktHRKa3sBuVAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH4gYdCxAnWfYiEAAAAOBJREFUGNNjYJBhZJJlZmFlgwIGOXkFRSVldg64gIqqmrqGJicXXEBLW0dXT5+bhxcmYGBoZGxiamZuYWllzccPFLCxtbN3cHRydnF1c/cQAAt4enn7+Pr5BwQGBQuCBEJCw8J9IiKjomNi44SAAvEJs2cnJiWnpKalZ2QKwwSysnNy8/LyCwpF2BiKgALFJaVl5RUVFZVVomwM1TVz5s6rratvAILGJjE2huaW1vkLFs5dBAJt7R3iDBKdXd2Ll8xfuBQEenr7GCSl+idMnAQDk6cwsElPnTZ9+gwomDkLAB3fTzYF1xbJAAAAGXRFWHRDb21tZW50AENyZWF0ZWQgd2l0aCBHSU1QV4EOFwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yOVQxMToxNjozOSswMjowMGq28QoAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjlUMTE6MTY6MzkrMDI6MDAb60m2AAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC",
+				"smallFaviconLength": 1308,
+				"smallFaviconRef": "",
+				"smallFaviconSize": 16,
+				"hostname": "brow",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.youtube.com/",
+				"hostname": "youtube",
+				"sendAttributionRequest": false,
+				"label": "YouTube",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/youtube-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/youtube-com.png",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.facebook.com/",
+				"hostname": "facebook",
+				"sendAttributionRequest": false,
+				"label": "Facebook",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/facebook-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/facebook-com.ico",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.reddit.com/",
+				"hostname": "reddit",
+				"sendAttributionRequest": false,
+				"label": "Reddit",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/reddit-com@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/reddit-com.png",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.bbc.co.uk/",
+				"hostname": "bbc",
+				"sendAttributionRequest": false,
+				"label": "BBC",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/bbc-uk@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/bbc-uk.ico",
+				"typedBonus": true
+			},
+			{
+				"isDefault": true,
+				"url": "https://www.ebay.co.uk/",
+				"hostname": "ebay",
+				"sendAttributionRequest": false,
+				"label": "eBay",
+				"tippyTopIcon": "chrome://activity-stream/content/data/content/tippytop/images/ebay@2x.png",
+				"smallFavicon": "chrome://activity-stream/content/data/content/tippytop/favicons/ebay.ico",
+				"typedBonus": true
+			}
+		],
+		"pref": {
+			"collapsed": false
+		}
+	},
+	"ASRouter": {
+		"initialized": false
+	},
+	"Snippets": {
+		"initialized": false
+	},
+	"Prefs": {
+		"initialized": true,
+		"values": {
+			"default.sites": "https://www.youtube.com/,https://www.facebook.com/,https://www.reddit.com/,https://www.amazon.co.uk/,https://www.bbc.co.uk/,https://www.ebay.co.uk/",
+			"feeds.section.topstories.options": "{\"api_key_pref\":\"extensions.pocket.oAuthConsumerKey\",\"hidden\":false,\"provider_icon\":\"chrome://global/skin/icons/pocket.svg\",\"provider_name\":\"Pocket\",\"read_more_endpoint\":\"https://getpocket.com/explore/trending?src=fx_new_tab\",\"stories_endpoint\":\"https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?version=3&consumer_key=$apiKey&locale_lang=en-US&feed_variant=default_spocs_on\",\"stories_referrer\":\"https://getpocket.com/recommendations\",\"topics_endpoint\":\"https://getpocket.cdn.mozilla.net/v3/firefox/trending-topics?version=2&consumer_key=$apiKey&locale_lang=en-US\",\"show_spocs\":true}",
+			"feeds.topsites": true,
+			"hideTopSitesTitle": false,
+			"showSponsored": true,
+			"showSponsoredTopSites": true,
+			"pocketCta": "{\"cta_button\":\"\",\"cta_text\":\"\",\"cta_url\":\"\",\"use_cta\":false}",
+			"showSearch": true,
+			"feeds.snippets": false,
+			"topSitesRows": 1,
+			"telemetry": true,
+			"telemetry.ut.events": false,
+			"telemetry.structuredIngestion.endpoint": "https://incoming.telemetry.mozilla.org/submit",
+			"section.highlights.includeVisited": true,
+			"section.highlights.includeBookmarks": true,
+			"section.highlights.includePocket": true,
+			"section.highlights.includeDownloads": true,
+			"section.highlights.rows": 1,
+			"section.topstories.rows": 1,
+			"sectionOrder": "topsites,topstories,highlights",
+			"improvesearch.noDefaultSearchTile": true,
+			"improvesearch.topSiteSearchShortcuts.searchEngines": "google,amazon",
+			"improvesearch.topSiteSearchShortcuts.havePinned": "amazon",
+			"asrouter.devtoolsEnabled": false,
+			"asrouter.providers.onboarding": "{\"id\":\"onboarding\",\"type\":\"local\",\"localProvider\":\"OnboardingMessageProvider\",\"enabled\":true,\"exclude\":[]}",
+			"discoverystream.flight.blocks": "{}",
+			"discoverystream.config": "{\"api_key_pref\":\"extensions.pocket.oAuthConsumerKey\",\"collapsible\":true,\"enabled\":true,\"show_spocs\":true,\"hardcoded_layout\":true,\"layout_endpoint\":\"https://getpocket.cdn.mozilla.net/v3/newtab/layout?version=1&consumer_key=$apiKey&layout_variant=basic\"}",
+			"discoverystream.endpoints": "https://getpocket.cdn.mozilla.net/,https://firefox-api-proxy.cdn.mozilla.net/,https://spocs.getpocket.com/",
+			"discoverystream.isCollectionDismissible": true,
+			"discoverystream.onboardingExperience.dismissed": false,
+			"discoverystream.region-basic-layout": false,
+			"discoverystream.spoc.impressions": "{}",
+			"discoverystream.endpointSpocsClear": "https://spocs.getpocket.com/user",
+			"discoverystream.rec.impressions": "{}",
+			"showRecentSaves": true,
+			"feeds.aboutpreferences": true,
+			"feeds.newtabinit": true,
+			"feeds.places": true,
+			"feeds.prefs": true,
+			"feeds.sections": true,
+			"feeds.section.highlights": false,
+			"feeds.system.topstories": true,
+			"feeds.systemtick": true,
+			"feeds.telemetry": true,
+			"feeds.favicon": true,
+			"feeds.system.topsites": true,
+			"feeds.recommendationprovider": true,
+			"feeds.discoverystreamfeed": true,
+			"isPrivateBrowsingEnabled": true,
+			"platform": "linux",
+			"region": "GB",
+			"fxa_endpoint": "https://accounts.firefox.com/",
+			"appUpdateChannel": "release",
+			"improvesearch.topSiteSearchShortcuts": true,
+			"mayHaveSponsoredTopSites": true,
+			"improvesearch.handoffToAwesomebar": true,
+			"urlbar.placeholderName": "Google",
+			"featureConfig": {
+				"customizationMenuEnabled": null,
+				"topSitesContileEnabled": false
+			},
+			"pocketConfig": {
+				"spocPositions": "1,5,7,11,18,20",
+				"spocTopsitesPositions": "1",
+				"spocAdTypes": "",
+				"spocZoneIds": "",
+				"spocTopsitesAdTypes": "",
+				"spocTopsitesZoneIds": "",
+				"spocSiteId": "",
+				"widgetPositions": "",
+				"hybridLayout": false,
+				"hideCardBackground": false,
+				"fourCardLayout": false,
+				"newFooterSection": false,
+				"saveToPocketCard": true,
+				"saveToPocketCardRegions": "",
+				"hideDescriptions": false,
+				"hideDescriptionsRegions": "",
+				"compactGrid": false,
+				"compactImages": false,
+				"imageGradient": false,
+				"titleLines": 3,
+				"descLines": 3,
+				"onboardingExperience": false,
+				"essentialReadsHeader": false,
+				"editorsPicksHeader": false,
+				"recentSavesEnabled": false,
+				"readTime": true,
+				"newSponsoredLabel": false,
+				"sendToPocket": true,
+				"recsPersonalized": false,
+				"spocsPersonalized": true,
+				"spocsCacheTimeout": null,
+				"regionStoriesConfig": "US,DE,CA,GB,IE,CH,AT,BE,IN,FR,IT,ES",
+				"regionBffConfig": "FR,IT,ES",
+				"regionStoriesBlock": "",
+				"localeListConfig": "",
+				"regionSpocsConfig": "US,CA,DE,GB,FR,IT,ES",
+				"topSitesContileSovEnabled": false
+			},
+			"logowordmark.alwaysVisible": true,
+			"feeds.section.topstories": true,
+			"discoverystream.enabled": true,
+			"discoverystream.sponsored-collections.enabled": false,
+			"discoverystream.hardcoded-basic-layout": false,
+			"discoverystream.personalization.enabled": true,
+			"discoverystream.personalization.override": false,
+			"discoverystream.personalization.modelKeys": "nb_model_arts_and_entertainment, nb_model_autos_and_vehicles, nb_model_beauty_and_fitness, nb_model_blogging_resources_and_services, nb_model_books_and_literature, nb_model_business_and_industrial, nb_model_computers_and_electronics, nb_model_finance, nb_model_food_and_drink, nb_model_games, nb_model_health, nb_model_hobbies_and_leisure, nb_model_home_and_garden, nb_model_internet_and_telecom, nb_model_jobs_and_education, nb_model_law_and_government, nb_model_online_communities, nb_model_people_and_society, nb_model_pets_and_animals, nb_model_real_estate, nb_model_reference, nb_model_science, nb_model_shopping, nb_model_sports, nb_model_travel",
+			"discoverystream.spocs-endpoint": "",
+			"discoverystream.spocs-endpoint-query": "",
+			"newNewtabExperience.colors": "#0090ED,#FF4F5F,#2AC3A2,#FF7139,#A172FF,#FFA437,#FF2A8A"
+		}
+	},
+	"Dialog": {
+		"visible": false,
+		"data": {}
+	},
+	"Sections": [
+		{
+			"title": {
+				"id": "newtab-section-header-pocket",
+				"values": {
+					"provider": "Pocket"
+				}
+			},
+			"rows": [],
+			"enabled": true,
+			"id": "topstories",
+			"pref": {
+				"titleString": {
+					"id": "home-prefs-recommended-by-header",
+					"values": {
+						"provider": "Pocket"
+					}
+				},
+				"descString": {
+					"id": "home-prefs-recommended-by-description-new",
+					"values": {
+						"provider": "Pocket"
+					}
+				},
+				"nestedPrefs": [
+					{
+						"name": "showSponsored",
+						"titleString": "home-prefs-recommended-by-option-sponsored-stories",
+						"icon": "icon-info",
+						"eventSource": "POCKET_SPOCS"
+					}
+				],
+				"learnMore": {
+					"link": {
+						"href": "https://getpocket.com/firefox/new_tab_learn_more",
+						"id": "home-prefs-recommended-by-learn-more"
+					}
+				},
+				"collapsed": false,
+				"feed": "feeds.section.topstories"
+			},
+			"shouldHidePref": false,
+			"eventSource": "TOP_STORIES",
+			"icon": "chrome://global/skin/icons/pocket.svg",
+			"learnMore": {
+				"link": {
+					"href": "https://getpocket.com/firefox/new_tab_learn_more",
+					"message": {
+						"id": "newtab-pocket-learn-more"
+					}
+				}
+			},
+			"compactCards": false,
+			"rowsPref": "section.topstories.rows",
+			"maxRows": 4,
+			"availableLinkMenuOptions": [
+				"CheckBookmarkOrArchive",
+				"CheckSavedToPocket",
+				"Separator",
+				"OpenInNewWindow",
+				"OpenInPrivateWindow",
+				"Separator",
+				"BlockUrl"
+			],
+			"emptyState": {
+				"message": {
+					"id": "newtab-empty-section-topstories",
+					"values": {
+						"provider": "Pocket"
+					}
+				},
+				"icon": "check"
+			},
+			"shouldSendImpressionStats": true,
+			"dedupeFrom": [
+				"highlights"
+			],
+			"options": {
+				"api_key_pref": "extensions.pocket.oAuthConsumerKey",
+				"hidden": false,
+				"provider_icon": "chrome://global/skin/icons/pocket.svg",
+				"provider_name": "Pocket",
+				"read_more_endpoint": "https://getpocket.com/explore/trending?src=fx_new_tab",
+				"stories_endpoint": "https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?version=3&consumer_key=$apiKey&locale_lang=en-US&feed_variant=default_spocs_on",
+				"stories_referrer": "https://getpocket.com/recommendations",
+				"topics_endpoint": "https://getpocket.cdn.mozilla.net/v3/firefox/trending-topics?version=2&consumer_key=$apiKey&locale_lang=en-US",
+				"show_spocs": true
+			},
+			"contextMenuOptions": [
+				"CheckBookmarkOrArchive",
+				"CheckSavedToPocket",
+				"Separator",
+				"OpenInNewWindow",
+				"OpenInPrivateWindow",
+				"Separator",
+				"BlockUrl"
+			],
+			"initialized": false,
+			"dedupeConfigurations": [
+				{
+					"id": "topstories",
+					"dedupeFrom": [
+						"highlights"
+					]
+				}
+			]
+		},
+		{
+			"title": {
+				"id": "newtab-section-header-recent-activity"
+			},
+			"rows": [],
+			"enabled": false,
+			"id": "highlights",
+			"pref": {
+				"titleString": {
+					"id": "home-prefs-recent-activity-header"
+				},
+				"descString": {
+					"id": "home-prefs-recent-activity-description"
+				},
+				"nestedPrefs": [
+					{
+						"name": "section.highlights.includeVisited",
+						"titleString": "home-prefs-highlights-option-visited-pages"
+					},
+					{
+						"name": "section.highlights.includeBookmarks",
+						"titleString": "home-prefs-highlights-options-bookmarks"
+					},
+					{
+						"name": "section.highlights.includeDownloads",
+						"titleString": "home-prefs-highlights-option-most-recent-download"
+					},
+					{
+						"name": "section.highlights.includePocket",
+						"titleString": "home-prefs-highlights-option-saved-to-pocket",
+						"hidden": false
+					}
+				],
+				"collapsed": false,
+				"feed": "feeds.section.highlights"
+			},
+			"shouldHidePref": false,
+			"eventSource": "HIGHLIGHTS",
+			"icon": "chrome://global/skin/icons/highlights.svg",
+			"compactCards": true,
+			"rowsPref": "section.highlights.rows",
+			"maxRows": 4,
+			"emptyState": {
+				"message": {
+					"id": "newtab-empty-section-highlights"
+				},
+				"icon": "chrome://global/skin/icons/highlights.svg"
+			},
+			"shouldSendImpressionStats": false,
+			"options": {},
+			"initialized": false
+		}
+	],
+	"Pocket": {
+		"isUserLoggedIn": null,
+		"pocketCta": {},
+		"waitingForSpoc": true
+	},
+	"Personalization": {
+		"lastUpdated": 1693950082340,
+		"initialized": true
+	},
+	"DiscoveryStream": {
+		"config": {
+			"api_key_pref": "extensions.pocket.oAuthConsumerKey",
+			"collapsible": true,
+			"enabled": true,
+			"show_spocs": true,
+			"hardcoded_layout": true,
+			"layout_endpoint": "https://getpocket.cdn.mozilla.net/v3/newtab/layout?version=1&consumer_key=40249-e88c401e1b1f2242d9e441c4&layout_variant=basic"
+		},
+		"layout": [
+			{
+				"width": 12,
+				"components": [
+					{
+						"type": "TopSites",
+						"header": {
+							"title": {
+								"id": "newtab-section-header-topsites"
+							}
+						},
+						"properties": {}
+					},
+					{
+						"type": "Message",
+						"essentialReadsHeader": false,
+						"editorsPicksHeader": false,
+						"header": {
+							"title": {
+								"id": "newtab-section-header-pocket",
+								"values": {
+									"provider": "Pocket"
+								}
+							},
+							"subtitle": "",
+							"link_text": {
+								"id": "newtab-pocket-learn-more"
+							},
+							"link_url": "https://getpocket.com/firefox/new_tab_learn_more",
+							"icon": "chrome://global/skin/icons/pocket.svg"
+						},
+						"properties": {},
+						"styles": {
+							".ds-message": "margin-bottom: -20px"
+						}
+					},
+					{
+						"type": "CardGrid",
+						"properties": {
+							"items": 21,
+							"hybridLayout": false,
+							"hideCardBackground": false,
+							"fourCardLayout": false,
+							"compactGrid": false,
+							"essentialReadsHeader": false,
+							"editorsPicksHeader": false,
+							"onboardingExperience": false
+						},
+						"widgets": {
+							"positions": [],
+							"data": [
+								{
+									"type": "TopicsWidget"
+								}
+							]
+						},
+						"cta_variant": "link",
+						"header": {
+							"title": ""
+						},
+						"placement": {
+							"name": "spocs",
+							"ad_types": [
+								3617
+							],
+							"zone_ids": [
+								217758,
+								217995
+							]
+						},
+						"feed": {
+							"embed_reference": null,
+							"url": "https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?version=3&consumer_key=$apiKey&locale_lang=$locale&region=$region&count=30"
+						},
+						"spocs": {
+							"probability": 1,
+							"positions": [
+								{
+									"index": 1
+								},
+								{
+									"index": 5
+								},
+								{
+									"index": 7
+								},
+								{
+									"index": 11
+								},
+								{
+									"index": 18
+								},
+								{
+									"index": 20
+								}
+							]
+						}
+					},
+					{
+						"type": "Navigation",
+						"newFooterSection": false,
+						"properties": {
+							"alignment": "left-align",
+							"links": [
+								{
+									"name": "Self improvement",
+									"url": "https://getpocket.com/explore/self-improvement?utm_source=pocket-newtab"
+								},
+								{
+									"name": "Food",
+									"url": "https://getpocket.com/explore/food?utm_source=pocket-newtab"
+								},
+								{
+									"name": "Entertainment",
+									"url": "https://getpocket.com/explore/entertainment?utm_source=pocket-newtab"
+								},
+								{
+									"name": "Health & fitness",
+									"url": "https://getpocket.com/explore/health?utm_source=pocket-newtab"
+								},
+								{
+									"name": "Science",
+									"url": "https://getpocket.com/explore/science?utm_source=pocket-newtab"
+								},
+								{
+									"name": "More recommendations ›",
+									"url": "https://getpocket.com/explore?utm_source=pocket-newtab"
+								}
+							],
+							"extraLinks": [
+								{
+									"name": "Career",
+									"url": "https://getpocket.com/explore/career?utm_source=pocket-newtab"
+								},
+								{
+									"name": "Technology",
+									"url": "https://getpocket.com/explore/technology?utm_source=pocket-newtab"
+								}
+							],
+							"privacyNoticeURL": {
+								"url": "https://www.mozilla.org/privacy/firefox/#suggest-relevant-content",
+								"title": {
+									"id": "newtab-section-menu-privacy-notice"
+								}
+							}
+						},
+						"header": {
+							"title": {
+								"id": "newtab-pocket-read-more"
+							}
+						},
+						"styles": {
+							".ds-navigation": "margin-top: -10px;"
+						}
+					}
+				]
+			}
+		],
+		"lastUpdated": null,
+		"isPrivacyInfoModalVisible": false,
+		"isCollectionDismissible": true,
+		"feeds": {
+			"data": {
+				"https://getpocket.cdn.mozilla.net/v3/firefox/global-recs?version=3&consumer_key=$apiKey&locale_lang=$locale&region=$region&count=30": {
+					"lastUpdated": 1693950022242,
+					"data": {
+						"settings": {
+							"domainAffinityParameterSets": {},
+							"timeSegments": [
+								{
+									"id": "week",
+									"startTime": 604800,
+									"endTime": 0,
+									"weightPosition": 1
+								},
+								{
+									"id": "month",
+									"startTime": 2592000,
+									"endTime": 604800,
+									"weightPosition": 0.5
+								}
+							],
+							"recsExpireTime": 5400,
+							"spocsPerNewTabs": 0.5,
+							"version": "6f605b0212069b4b8d3d040faf55742061a25c16"
+						},
+						"recommendations": [
+							{
+								"id": 3609789620419879,
+								"url": "https://www.theguardian.com/society/2023/aug/28/unspoken-grief-childless-men?utm_source=pocket-newtab-en-gb",
+								"title": "‘I just assumed it would happen’: the unspoken grief of childless men",
+								"excerpt": "Father’s Day is dangerous for Robert Nurden. Childless not through choice but, as he puts it, “complacency, bad luck, bad judgment”, he tries to stay indoors and ignore the family celebrations outside. But one year, he went for a walk. “I met family after family.”",
+								"domain": "The Guardian",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/e5ff2b00-1ad4-4468-96a8-92cca554593a.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe5ff2b00-1ad4-4468-96a8-92cca554593a.jpeg&resize=w450",
+								"time_to_read": 3,
+								"score": 1
+							},
+							{
+								"id": 633795984860384,
+								"url": "https://getpocket.com/explore/item/how-to-survive-isolation-according-to-an-astronaut-who-spent-215-straight-days-in-spaceflight?utm_source=pocket-newtab-en-gb",
+								"title": "How to Survive Isolation, According to an Astronaut Who Spent 215 Days in Spaceflight",
+								"excerpt": "Michael López-Alegría describes how he and his fellow astronauts kept from boiling over while they took in the beauty (and fragility) of Earth.",
+								"domain": "Esquire",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/11361f57-a32e-43d5-9751-f5dd83a6feaf.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F11361f57-a32e-43d5-9751-f5dd83a6feaf.jpeg&resize=w450",
+								"time_to_read": 9,
+								"score": 1
+							},
+							{
+								"id": 3176331602345234,
+								"url": "https://www.theguardian.com/technology/2023/aug/27/staying-cool-without-air-con-warming-climate-crisis-planet?utm_source=pocket-newtab-en-gb",
+								"title": "How to stay cool without air con – and help take some heat off the planet",
+								"excerpt": "“I can honestly say it’s the best thing I’ve ever spent my money on,” says 30-year-old Stephen about the unassuming waist-high plastic pillar that sits in the bedroom of his converted bungalow in Nottinghamshire.",
+								"domain": "The Observer",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/d02995b2-b32f-4d78-afa8-a5b4cecdbe07.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd02995b2-b32f-4d78-afa8-a5b4cecdbe07.jpeg&resize=w450",
+								"time_to_read": 8,
+								"score": 1
+							},
+							{
+								"id": 34553726218539,
+								"url": "https://www.bbc.com/sport/athletics/66615089?utm_source=pocket-newtab-en-gb",
+								"title": "Bobbi Gibb: The Boston Marathon pioneer who raced a lie",
+								"excerpt": "Those nine words leapt off the paper like a slap to the face. \"The audacity,\" thought Roberta 'Bobbi' Gibb.",
+								"domain": "BBC",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4f6edca5-0ffe-4905-aa0c-c42bfa1a2d7f.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4f6edca5-0ffe-4905-aa0c-c42bfa1a2d7f.jpeg&resize=w450",
+								"time_to_read": 14,
+								"score": 1
+							},
+							{
+								"id": 111295936903556,
+								"url": "https://thetakeout.com/self-checkout-rules-of-etiquette-alcohol-produce-kids-1850756581?utm_source=pocket-newtab-en-gb",
+								"title": "The 8 Unbreakable Rules of Self-Checkout Etiquette",
+								"excerpt": "Self-checkout can be the worst part about grocery shopping. Here’s how to make it better.",
+								"domain": "The Takeout",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/8e50f936-e66d-4027-a3e8-a9796baf0289.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8e50f936-e66d-4027-a3e8-a9796baf0289.jpeg&resize=w450",
+								"time_to_read": 10,
+								"score": 1
+							},
+							{
+								"id": 1581796970678549,
+								"url": "https://www.nature.com/articles/d41586-023-02712-4?utm_source=pocket-newtab-en-gb",
+								"title": "Human Ancestors Nearly Went Extinct 900,000 Years Ago",
+								"excerpt": "A new technique analysing modern genetic data suggests that pre-humans survived in a group of only 1,280 individuals.",
+								"domain": "Nature Publishing Group",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/d17e25cb-18e1-4566-8f49-3ebce18000d5.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fd17e25cb-18e1-4566-8f49-3ebce18000d5.jpeg&resize=w450",
+								"time_to_read": 4,
+								"score": 1
+							},
+							{
+								"id": 3424695154169059,
+								"url": "https://www.livingetc.com/advice/this-low-effort-vegetable-gardening-method-is-genius-way-to-grow-crops-in-a-small-backyard?utm_source=pocket-newtab-en-gb",
+								"title": "This low-effort vegetable gardening method is genius way to grow crops in a small backyard",
+								"excerpt": "Do you want an easy way into gardening that doesn't require tonnes of space? Fancy growing a no-dig edible garden that incorporates all your favorite veg? Do you want it to yield the best harvest possible?",
+								"domain": "livingetc.com",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4913a1c2-c83b-424d-88da-13df0d3321ed.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4913a1c2-c83b-424d-88da-13df0d3321ed.jpeg&resize=w450",
+								"time_to_read": 6,
+								"score": 1
+							},
+							{
+								"id": 2130296532773782,
+								"url": "https://www.glamour.com/story/is-coffee-good-for-you?utm_source=pocket-newtab-en-gb",
+								"title": "Is Coffee Good for You? A Dermatologist, a Dietitian, and an Endocrinologist Weigh In",
+								"excerpt": "Cappuccino, Americano, latte, and cortado—I love them all. For a drink that’s been around for centuries, our obsession with coffee has yet to die down.",
+								"domain": "Glamour",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/f15d259d-35d4-48a4-8ab6-38041ba601d3.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff15d259d-35d4-48a4-8ab6-38041ba601d3.jpeg&resize=w450",
+								"time_to_read": 4,
+								"score": 1
+							},
+							{
+								"id": 858310646908804,
+								"url": "https://www.spectator.co.uk/article/the-forgotten-end-of-the-second-world-war/?utm_source=pocket-newtab-en-gb",
+								"title": "The forgotten end of the second world war",
+								"excerpt": "Two weeks ago, VJ day (Victory over Japan day) celebrated the end of the Pacific War. On 15 August 1945 Emperor Hirohito, with his high-pitched voice and arcane royal language, which was heard by his people for the first time, announced Japan’s surrender.",
+								"domain": "The Spectator",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/8988424b-5601-4487-b6ce-ec55fb0a55ab.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8988424b-5601-4487-b6ce-ec55fb0a55ab.jpeg&resize=w450",
+								"time_to_read": 9,
+								"score": 1
+							},
+							{
+								"id": 966322796664034,
+								"url": "https://thecritic.co.uk/tolkien-50-years-on/?utm_source=pocket-newtab-en-gb",
+								"title": "Tolkien, 50 years on",
+								"excerpt": "The true scale of his legacy is gradually becoming apparent.",
+								"domain": "The Critic",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/da37ba01-2943-47b0-ac48-b44bd759b354.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fda37ba01-2943-47b0-ac48-b44bd759b354.jpeg&resize=w450",
+								"time_to_read": 11,
+								"score": 1
+							},
+							{
+								"id": 2340639726295844,
+								"url": "https://www.independent.co.uk/travel/europe/romania/rail-draculas-castle-train-romania-transylvania-b2396744.html?utm_source=pocket-newtab-en-gb",
+								"title": "St Pancras to Dracula’s Castle by train is three holidays in one",
+								"excerpt": "They say a journey of a thousand miles begins with a single step. That step, for me, comes at 5am on a Tuesday morning in central London. As first light breaks over Bloomsbury’s Cartwright Gardens, a blackbird starts singing from the treetops.",
+								"domain": "The Independent",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/e204245d-2c4c-44fc-add1-e015dfb931d8.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fe204245d-2c4c-44fc-add1-e015dfb931d8.jpeg&resize=w450",
+								"time_to_read": 6,
+								"score": 1
+							},
+							{
+								"id": 1585020033883937,
+								"url": "https://www.newyorker.com/news/letter-from-the-south/how-a-man-in-prison-stole-millions-from-billionaires?utm_source=pocket-newtab-en-gb",
+								"title": "How a Man in Prison Stole Millions from Billionaires",
+								"excerpt": "With smuggled cell phones and a handful of accomplices, Arthur Lee Cofield, Jr., took money from large bank accounts and bought houses, cars, clothes, and gold.",
+								"domain": "The New Yorker",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/ff23bb1a-766e-468c-ba77-ded01d669afb.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fff23bb1a-766e-468c-ba77-ded01d669afb.jpeg&resize=w450",
+								"time_to_read": 30,
+								"score": 1
+							},
+							{
+								"id": 3098786951990167,
+								"url": "https://www.smh.com.au/traveller/inspiration/the-49-modern-wonders-of-the-world-as-named-by-the-experts-20230821-p5dy3h.html?utm_source=pocket-newtab-en-gb",
+								"title": "The 49 modern wonders of the world, as named by the experts",
+								"excerpt": "Authorities in various disciplines, encompassing food, design, art and more, have complied a list of must-visit places that will make your heart soar. ",
+								"domain": "The Sydney Morning Herald",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/2836a021-28af-4c69-96bc-55783bf32ef7.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F2836a021-28af-4c69-96bc-55783bf32ef7.jpeg&resize=w450",
+								"time_to_read": 18,
+								"score": 1
+							},
+							{
+								"id": 1044339392496390,
+								"url": "https://www.cnn.com/2023/09/02/asia/japan-speed-dating-parents-low-fertility-intl-hnk/index.html?utm_source=pocket-newtab-en-gb",
+								"title": "In Japan, the young find dating so hard their parents are doing it for them",
+								"excerpt": "It’s a steamy summer afternoon in the Japanese city of Osaka, where a group of around 60 men and women have gathered for a session of “omiai,” or matchmaking, to find true love.",
+								"domain": "CNN",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/f0490d8e-6d9d-41a1-8716-4e67d3edeec0.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ff0490d8e-6d9d-41a1-8716-4e67d3edeec0.jpeg&resize=w450",
+								"time_to_read": 8,
+								"score": 1
+							},
+							{
+								"id": 2044333123511812,
+								"url": "https://www.theatlantic.com/family/archive/2023/08/childhood-friendship-benefits-play/675158/?utm_source=pocket-newtab-en-gb",
+								"title": "What Adults Forget About Friendship",
+								"excerpt": "Just catching up can feel stale. Playing and wasting time together like kids do are how you make memories.",
+								"domain": "The Atlantic",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/3f3c982e-6e9c-471b-91f3-adcfde22ae91.png",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F3f3c982e-6e9c-471b-91f3-adcfde22ae91.png&resize=w450",
+								"time_to_read": 8,
+								"score": 1
+							},
+							{
+								"id": 2201124501390022,
+								"url": "https://www.politico.com/news/magazine/2023/09/01/america-life-expectancy-regions-00113369?utm_source=pocket-newtab-en-gb",
+								"title": "America’s Surprising Partisan Divide on Life Expectancy",
+								"excerpt": "It’s not poverty or diet. Centuries-old settlement patterns — and the attitudes they spawned about government’s role in public health — are to blame.",
+								"domain": "POLITICO",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/9e7c17d4-d026-49c5-95a6-afc6b73ec8b9.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F9e7c17d4-d026-49c5-95a6-afc6b73ec8b9.jpeg&resize=w450",
+								"time_to_read": 16,
+								"score": 1
+							},
+							{
+								"id": 3886123030740619,
+								"url": "https://getpocket.com/collections/how-to-survive-embarrassment-when-youd-rather-crawl-into-a-hole?utm_source=pocket-newtab-en-gb",
+								"title": "How to Survive Embarrassment When You’d Rather Crawl Into a Hole",
+								"excerpt": "The science of shame, how to find the humor in your humiliation, and useful tips to get through some of life’s most mortifying moments.",
+								"domain": "Pocket Collections",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4312875d-c047-42e1-9920-ffb46b7da16c.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4312875d-c047-42e1-9920-ffb46b7da16c.jpeg&resize=w450",
+								"score": 1
+							},
+							{
+								"id": 695633998097247,
+								"url": "https://www.quantamagazine.org/why-mathematical-proof-is-a-social-compact-20230831/?utm_source=pocket-newtab-en-gb",
+								"title": "Why Mathematical Proof Is a Social Compact",
+								"excerpt": "Number theorist Andrew Granville on what mathematics really is — and why objectivity is never quite within reach.",
+								"domain": "Quanta Magazine",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/fd1a9e1f-57a6-4ceb-934f-3a8545fc9670.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Ffd1a9e1f-57a6-4ceb-934f-3a8545fc9670.jpeg&resize=w450",
+								"time_to_read": 13,
+								"score": 1
+							},
+							{
+								"id": 104507919536682,
+								"url": "https://www.vanityfair.com/style/2023/08/kyle-deschanel-the-rothschild-who-wasnt?utm_source=pocket-newtab-en-gb",
+								"title": "Kyle Deschanel, the Rothschild Who Wasn’t",
+								"excerpt": "When Kyle de Rothschild Deschanel arrived in New York nightlife and venture fundraising circles a few years ago, he was an instant hit. Equal parts charm, enterprise, and fabulous family wealth, he seemed to live on a 24/7 carousel of mega-dollar deals and raucous parties. It was almost as if he had conjured his entire existence out of thin air. What if he had?",
+								"domain": "Vanity Fair",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4518411e-d1f3-4ff9-9bb6-b5d5cf2fc3d3.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4518411e-d1f3-4ff9-9bb6-b5d5cf2fc3d3.jpeg&resize=w450",
+								"time_to_read": 41,
+								"score": 1
+							},
+							{
+								"id": 4058062033191126,
+								"url": "https://www.vox.com/climate/2023/8/31/23849730/climate-public-views-emotions-hope-concern?utm_source=pocket-newtab-en-gb",
+								"title": "There’s Been a Shift in How We Think About Climate Change",
+								"excerpt": "Our actions today will determine just how bad climate change will become. But which emotions best drive a person to become politically active? Hope? Anger? Persevering through complacency? What if the fundamental challenge is actually our attention?",
+								"domain": "Vox",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4856c50c-173f-4272-aec4-bd36b4009d96.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4856c50c-173f-4272-aec4-bd36b4009d96.jpeg&resize=w450",
+								"time_to_read": 10,
+								"score": 1
+							},
+							{
+								"id": 3131558746947318,
+								"url": "https://www.thecut.com/article/cookbook-recommendations.html?utm_source=pocket-newtab-en-gb",
+								"title": "18 Cookbooks We Love Right Now",
+								"excerpt": "No matter who I talk to, the goal to “eat at home more often” is at the top of everyone’s to-do list. Apparently, it’s just not as enticing as spending your whole paycheck on a night out to dinner with friends — but these cookbooks may change your mind.",
+								"domain": "The Cut",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/5d1d33be-eed0-4a25-8193-2ebf6689e7e8.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F5d1d33be-eed0-4a25-8193-2ebf6689e7e8.jpeg&resize=w450",
+								"time_to_read": 7,
+								"score": 1
+							},
+							{
+								"id": 2343807898953605,
+								"url": "https://www.interviewmagazine.com/film/ayo-edebiri-is-skeptical-of-her-success?utm_source=pocket-newtab-en-gb",
+								"title": "Ayo Edebiri Is Skeptical of Her Success",
+								"excerpt": "Ayo Edebiri is still spinning from Thom Browne’s couture extravaganza when she logs on with the filmmaker Daniel Kwan from her Paris hotel room.",
+								"domain": "Interview ",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/12365bbe-a39a-45ea-848d-36b960b3ffed.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F12365bbe-a39a-45ea-848d-36b960b3ffed.jpeg&resize=w450",
+								"time_to_read": 14,
+								"score": 1
+							},
+							{
+								"id": 49624051081774,
+								"url": "https://www.atlasobscura.com/articles/historical-italian-cookbook?utm_source=pocket-newtab-en-gb",
+								"title": "This Book Created Italian Food as We Know It",
+								"excerpt": " In the early days of unified Italy, Pellegrino Artusi helped forge a national cuisine. ",
+								"domain": "Atlas Obscura",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/58a23ee6-16df-48d4-a0a1-c4892bfd0e78.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F58a23ee6-16df-48d4-a0a1-c4892bfd0e78.jpeg&resize=w450",
+								"time_to_read": 6,
+								"score": 1
+							},
+							{
+								"id": 306439639114726,
+								"url": "https://slate.com/technology/2023/08/urban-beaver-new-york-city.html?utm_source=pocket-newtab-en-gb",
+								"title": "I Have a Radical Proposal to Make New York a Better Place to Live",
+								"excerpt": "A radical, beaver-filled idea to improve city parks.",
+								"domain": "Slate",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/8d7c5e22-5083-4f8c-bbe5-9ccf495debcf.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F8d7c5e22-5083-4f8c-bbe5-9ccf495debcf.jpeg&resize=w450",
+								"time_to_read": 8,
+								"score": 1
+							},
+							{
+								"id": 169822624262503,
+								"url": "https://www.bustle.com/wellness/birdwatching-tiktok?utm_source=pocket-newtab-en-gb",
+								"title": "TikTokers Are In Their Birdwatching Era",
+								"excerpt": "One minute you’re young, carefree, and hanging out at the bar with friends. The next, you’re crouched in the woods with a pair of binoculars and trying to spot the elusive scrub jay.",
+								"domain": "Bustle",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/4a2b7a1d-2ea3-4692-b3d1-3b78df70cfa7.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F4a2b7a1d-2ea3-4692-b3d1-3b78df70cfa7.jpeg&resize=w450",
+								"time_to_read": 4,
+								"score": 1
+							},
+							{
+								"id": 1138474720528124,
+								"url": "https://www.nytimes.com/2023/08/23/magazine/wildensteins-inheritance-case-art.html?utm_source=pocket-newtab-en-gb",
+								"title": "The Inheritance Case That Could Unravel an Art Dynasty",
+								"excerpt": "How a widow’s legal fight against the Wildenstein family of France has threatened their storied collection — and revealed the underbelly of the global art market.",
+								"domain": "The New York Times",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/c2e7462b-b19a-4b32-a404-43c26a3d5697.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fc2e7462b-b19a-4b32-a404-43c26a3d5697.jpeg&resize=w450",
+								"time_to_read": 32,
+								"score": 1
+							},
+							{
+								"id": 845458083204771,
+								"url": "https://www.wired.com/story/netflix-amazon-disney-max-streaming-wars-no-win/?utm_source=pocket-newtab-en-gb",
+								"title": "The Anticlimactic Death of the Streaming Wars",
+								"excerpt": "Productions are grinding to a halt and Netflix, Amazon, Disney+, and Max are leaning hard on ad-supported models. The result of all this disruption might just be everything old being new again.",
+								"domain": "WIRED",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/c641a7cc-b09c-47b9-b9aa-1098aa8d7ea2.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fc641a7cc-b09c-47b9-b9aa-1098aa8d7ea2.jpeg&resize=w450",
+								"time_to_read": 3,
+								"score": 1
+							},
+							{
+								"id": 1789412092068034,
+								"url": "https://www.abc.net.au/news/2023-08-23/cashless-society-financial-exclusion-safety-privacy-concerns/102706718?utm_source=pocket-newtab-en-gb",
+								"title": "Australia’s Transition to a Cashless Society Raises Concerns About Financial Exclusion, Privacy and Safety",
+								"excerpt": "Phasing out cash has serious implications for privacy, safety and financial exclusion among marginalised communities.",
+								"domain": "ABC",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/b67fd8a6-ea88-4457-947f-0a07f085a4d5.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2Fb67fd8a6-ea88-4457-947f-0a07f085a4d5.jpeg&resize=w450",
+								"time_to_read": 4,
+								"score": 1
+							},
+							{
+								"id": 2745267933732667,
+								"url": "https://www.theguardian.com/books/2023/aug/19/the-end-of-work-which-jobs-will-survive-the-ai-revolution?utm_source=pocket-newtab-en-gb",
+								"title": "The end of work: which jobs will survive the AI revolution?",
+								"excerpt": "Smart machines are meant to work for us, but there are already signs that we will end up working for them. What will the workplace of the future look like, and will your role still exist?",
+								"domain": "The Guardian",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/2caf411f-3779-4785-8bc0-a9057e811f7a.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F2caf411f-3779-4785-8bc0-a9057e811f7a.jpeg&resize=w450",
+								"time_to_read": 14,
+								"score": 1
+							},
+							{
+								"id": 1876528035591965,
+								"url": "https://www.bbc.com/future/article/20230822-how-hunger-can-warp-our-minds?utm_source=pocket-newtab-en-gb",
+								"title": "How hunger can warp our minds",
+								"excerpt": "Hunger is a powerful sensation, and it can overwhelm our brain's ability to carry out other tasks.",
+								"domain": "BBC",
+								"raw_image_src": "https://s3.us-east-1.amazonaws.com/pocket-curatedcorpusapi-prod-images/0893321a-7f97-480d-97b9-3520e02e2af5.jpeg",
+								"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fpocket-curatedcorpusapi-prod-images%2F0893321a-7f97-480d-97b9-3520e02e2af5.jpeg&resize=w450",
+								"time_to_read": 12,
+								"score": 1
+							}
+						],
+						"status": "success"
+					}
+				}
+			},
+			"loaded": true
+		},
+		"spocs": {
+			"spocs_endpoint": "https://spocs.getpocket.com/spocs",
+			"lastUpdated": 1693950022526,
+			"data": {
+				"settings": {
+					"feature_flags": {
+						"spoc_v2": true,
+						"collections": false
+					},
+					"spocsPerNewTabs": 1,
+					"domainAffinityParameterSets": {
+						"default": {
+							"recencyFactor": 0.5,
+							"frequencyFactor": 0.5,
+							"combinedDomainFactor": 0.5,
+							"perfectFrequencyVisits": 10,
+							"perfectCombinedDomainScore": 2,
+							"multiDomainBoost": 0,
+							"itemScoreFactor": 1
+						},
+						"fully-personalized": {
+							"recencyFactor": 0.5,
+							"frequencyFactor": 0.5,
+							"combinedDomainFactor": 0.5,
+							"perfectFrequencyVisits": 10,
+							"perfectCombinedDomainScore": 2,
+							"itemScoreFactor": 0.01,
+							"multiDomainBoost": 0
+						},
+						"fully-personalized-domains": {
+							"recencyFactor": 0.5,
+							"frequencyFactor": 0.5,
+							"combinedDomainFactor": 0.5,
+							"perfectFrequencyVisits": 1,
+							"perfectCombinedDomainScore": 10,
+							"itemScoreFactor": 0.01,
+							"multiDomainBoost": 0
+						}
+					},
+					"timeSegments": [
+						{
+							"id": "week-1",
+							"startTime": 432000,
+							"endTime": 0,
+							"weightPosition": 1
+						},
+						{
+							"id": "week-2",
+							"startTime": 864000,
+							"endTime": 432000,
+							"weightPosition": 1
+						},
+						{
+							"id": "week-3",
+							"startTime": 1296000,
+							"endTime": 864000,
+							"weightPosition": 1
+						},
+						{
+							"id": "week-4",
+							"startTime": 1728000,
+							"endTime": 1296000,
+							"weightPosition": 1
+						},
+						{
+							"id": "week-5",
+							"startTime": 2160000,
+							"endTime": 1728000,
+							"weightPosition": 1
+						},
+						{
+							"id": "week-6",
+							"startTime": 2592000,
+							"endTime": 2160000,
+							"weightPosition": 1
+						}
+					]
+				},
+				"spocs": {
+					"title": "",
+					"context": "",
+					"sponsor": "",
+					"items": [
+						{
+							"id": 419127811,
+							"flight_id": 409143214,
+							"campaign_id": 93222405,
+							"title": "Press Freedom Is Under Threat With a Record Number of Journalists Behind Bars",
+							"url": "https://event.trustconference.com/event/7fd73801-77ad-4c92-a091-6df31d1e07e0/summary?tm=FRJRS2C-OwKeMrfNQBmn4hofyExZ6AcLCeYDSz9BuR8&locale=en-US&utm_source=partner-comms&utm_medium=email&utm_campaign=tc2023&utm_content=mozilla",
+							"domain": "event.trustconference.com",
+							"excerpt": "Hear from experts tackling some of the gravest issues facing democracy at Trust Conference on 19-20 October.",
+							"priority": 3,
+							"context": "Sponsored by Thomson Reuters Foundation",
+							"raw_image_src": "https://s.zkcdn.net/Advertisers/bc47ea009215418596259222df0a1480.jpg",
+							"image_src": "https://img-getpocket.cdn.mozilla.net/direct?url=https%3A//s.zkcdn.net/Advertisers/bc47ea009215418596259222df0a1480.jpg&resize=w618-h310",
+							"shim": {
+								"click": "0,eyJ2IjoiMS4xMSIsImF2IjoyMTUzMTU2LCJhdCI6MzYxNywiYnQiOjAsImNtIjo5MzIyMjQwNSwiY2giOjM2ODQ4LCJjayI6e30sImNyIjoyMzc0NTY1OTksImRpIjoiNTliMzU5YzdjNjE0NDFiODhkNzU2YjM2MjVkMmMzMDgiLCJkaiI6MCwiaWkiOiIyOGMyYzBhNGNlZWM0N2MwYjE0YWJmZWU3YWMwNmNhNSIsImRtIjozLCJmYyI6NDE5MTI3ODExLCJmbCI6NDA5MTQzMjE0LCJpcCI6IjMuMjE5LjI1NC4xMjMiLCJrdyI6ImdiLGdiLWVuZyIsIm1rIjoiZ2IiLCJudyI6MTAyNTAsInBjIjowLCJvcCI6MCwiZWMiOjAsImdtIjowLCJlcCI6bnVsbCwicHIiOjE0NzUxOCwicnQiOjEsInJzIjo1MDAsInNhIjoiNTUiLCJzYiI6ImktMDg0NGQ0YWYyM2Q1NzBjZGEiLCJzcCI6NTc3NzEzLCJzdCI6MTA3MDA5OCwidWsiOiJ7Nzg0ODYzNWQtNzc3Ny00ODBmLWFhMzAtOTA4OTlhMzYxMTk4fSIsInpuIjoyMTc3NTgsInRzIjoxNjkzOTUwMTE4OTI3LCJwbiI6InNwb2NzIiwiZ2MiOnRydWUsImdDIjp0cnVlLCJncyI6Im5vbmUiLCJkYyI6MSwidHoiOiJVVEMiLCJ1ciI6bnVsbH0,Q8sPs1MWZfphtQBLIMG61SD10eA",
+								"impression": "1,eyJ2IjoiMS4xMSIsImF2IjoyMTUzMTU2LCJhdCI6MzYxNywiYnQiOjAsImNtIjo5MzIyMjQwNSwiY2giOjM2ODQ4LCJjayI6e30sImNyIjoyMzc0NTY1OTksImRpIjoiNTliMzU5YzdjNjE0NDFiODhkNzU2YjM2MjVkMmMzMDgiLCJkaiI6MCwiaWkiOiIyOGMyYzBhNGNlZWM0N2MwYjE0YWJmZWU3YWMwNmNhNSIsImRtIjozLCJmYyI6NDE5MTI3ODExLCJmbCI6NDA5MTQzMjE0LCJpcCI6IjMuMjE5LjI1NC4xMjMiLCJrdyI6ImdiLGdiLWVuZyIsIm1rIjoiZ2IiLCJudyI6MTAyNTAsInBjIjowLCJvcCI6MCwiZWMiOjAsImdtIjowLCJlcCI6bnVsbCwicHIiOjE0NzUxOCwicnQiOjEsInJzIjo1MDAsInNhIjoiNTUiLCJzYiI6ImktMDg0NGQ0YWYyM2Q1NzBjZGEiLCJzcCI6NTc3NzEzLCJzdCI6MTA3MDA5OCwidWsiOiJ7Nzg0ODYzNWQtNzc3Ny00ODBmLWFhMzAtOTA4OTlhMzYxMTk4fSIsInpuIjoyMTc3NTgsInRzIjoxNjkzOTUwMTE4OTI3LCJwbiI6InNwb2NzIiwiZ2MiOnRydWUsImdDIjp0cnVlLCJncyI6Im5vbmUiLCJkYyI6MSwidHoiOiJVVEMiLCJiYSI6MSwiZnEiOjF9,k_vx75e7RaCSv2Wya5YpikXN4_4",
+								"delete": "2,eyJ2IjoiMS4xMSIsImF2IjoyMTUzMTU2LCJhdCI6MzYxNywiYnQiOjAsImNtIjo5MzIyMjQwNSwiY2giOjM2ODQ4LCJjayI6e30sImNyIjoyMzc0NTY1OTksImRpIjoiNTliMzU5YzdjNjE0NDFiODhkNzU2YjM2MjVkMmMzMDgiLCJkaiI6MCwiaWkiOiIyOGMyYzBhNGNlZWM0N2MwYjE0YWJmZWU3YWMwNmNhNSIsImRtIjozLCJmYyI6NDE5MTI3ODExLCJmbCI6NDA5MTQzMjE0LCJpcCI6IjMuMjE5LjI1NC4xMjMiLCJrdyI6ImdiLGdiLWVuZyIsIm1rIjoiZ2IiLCJudyI6MTAyNTAsInBjIjowLCJvcCI6MCwiZWMiOjAsImdtIjowLCJlcCI6bnVsbCwicHIiOjE0NzUxOCwicnQiOjEsInJzIjo1MDAsInNhIjoiNTUiLCJzYiI6ImktMDg0NGQ0YWYyM2Q1NzBjZGEiLCJzcCI6NTc3NzEzLCJzdCI6MTA3MDA5OCwidWsiOiJ7Nzg0ODYzNWQtNzc3Ny00ODBmLWFhMzAtOTA4OTlhMzYxMTk4fSIsInpuIjoyMTc3NTgsInRzIjoxNjkzOTUwMTE4OTI3LCJwbiI6InNwb2NzIiwiZ2MiOnRydWUsImdDIjp0cnVlLCJncyI6Im5vbmUiLCJkYyI6MSwidHoiOiJVVEMiLCJldCI6MTd9,r7Sx2aZ1OCffiFs6NARNpi-s7ZA",
+								"save": "2,eyJ2IjoiMS4xMSIsImF2IjoyMTUzMTU2LCJhdCI6MzYxNywiYnQiOjAsImNtIjo5MzIyMjQwNSwiY2giOjM2ODQ4LCJjayI6e30sImNyIjoyMzc0NTY1OTksImRpIjoiNTliMzU5YzdjNjE0NDFiODhkNzU2YjM2MjVkMmMzMDgiLCJkaiI6MCwiaWkiOiIyOGMyYzBhNGNlZWM0N2MwYjE0YWJmZWU3YWMwNmNhNSIsImRtIjozLCJmYyI6NDE5MTI3ODExLCJmbCI6NDA5MTQzMjE0LCJpcCI6IjMuMjE5LjI1NC4xMjMiLCJrdyI6ImdiLGdiLWVuZyIsIm1rIjoiZ2IiLCJudyI6MTAyNTAsInBjIjowLCJvcCI6MCwiZWMiOjAsImdtIjowLCJlcCI6bnVsbCwicHIiOjE0NzUxOCwicnQiOjEsInJzIjo1MDAsInNhIjoiNTUiLCJzYiI6ImktMDg0NGQ0YWYyM2Q1NzBjZGEiLCJzcCI6NTc3NzEzLCJzdCI6MTA3MDA5OCwidWsiOiJ7Nzg0ODYzNWQtNzc3Ny00ODBmLWFhMzAtOTA4OTlhMzYxMTk4fSIsInpuIjoyMTc3NTgsInRzIjoxNjkzOTUwMTE4OTI3LCJwbiI6InNwb2NzIiwiZ2MiOnRydWUsImdDIjp0cnVlLCJncyI6Im5vbmUiLCJkYyI6MSwidHoiOiJVVEMiLCJldCI6MjB9,hU2XlmhWVERlDtSRpfD6AYA6VyY"
+							},
+							"parameter_set": "default",
+							"caps": {
+								"lifetime": 50,
+								"campaign": {
+									"count": 10,
+									"period": 86400
+								},
+								"flight": {
+									"count": 10,
+									"period": 86400
+								}
+							},
+							"domain_affinities": {},
+							"personalization_models": {
+								"arts_and_entertainment": 1,
+								"autos_and_vehicles": 1,
+								"beauty_and_fitness": 1,
+								"blogging_resources_and_services": 1,
+								"books_and_literature": 1,
+								"business_and_industrial": 1,
+								"computers_and_electronics": 1,
+								"finance": 1,
+								"food_and_drink": 1,
+								"games": 1,
+								"health": 1,
+								"hobbies_and_leisure": 1,
+								"home_and_garden": 1,
+								"internet_and_telecom": 1,
+								"jobs_and_education": 1,
+								"law_and_government": 1,
+								"online_communities": 1,
+								"people_and_society": 1,
+								"pets_and_animals": 1,
+								"real_estate": 1,
+								"reference": 1,
+								"science": 1,
+								"shopping": 1,
+								"sports": 1,
+								"travel": 1
+							},
+							"sponsor": "Thomson Reuters Foundation",
+							"sponsored_by_override": "Sponsor: Thomson Reuters Foundation",
+							"min_score": 0.1,
+							"item_score": 0.2,
+							"score": 1.4142035623730949,
+							"scorableItem": {
+								"id": 419127811,
+								"item_tags": {
+									"arts_and_entertainment": 1,
+									"autos_and_vehicles": 1,
+									"beauty_and_fitness": 1,
+									"blogging_resources_and_services": 1,
+									"books_and_literature": 1,
+									"business_and_industrial": 1,
+									"computers_and_electronics": 1,
+									"finance": 1,
+									"food_and_drink": 1,
+									"games": 1,
+									"health": 1,
+									"hobbies_and_leisure": 1,
+									"home_and_garden": 1,
+									"internet_and_telecom": 1,
+									"jobs_and_education": 1,
+									"law_and_government": 1,
+									"online_communities": 1,
+									"people_and_society": 1,
+									"pets_and_animals": 1,
+									"real_estate": 1,
+									"reference": 1,
+									"science": 1,
+									"shopping": 1,
+									"sports": 1,
+									"travel": 1
+								},
+								"item_score": 0.2,
+								"item_sort_id": 1
+							},
+							"rankingVector": {
+								"final_features": {
+									"tag_sim": 1.414213562373095,
+									"item_sort_id": 1
+								},
+								"coeffs": {
+									"tag_sim": 1,
+									"item_sort_id": -0.00001
+								},
+								"score": 1.4142035623730949
+							}
+						}
+					]
+				}
+			},
+			"loaded": true,
+			"frequency_caps": [],
+			"blocked": [],
+			"placements": [
+				{
+					"name": "spocs",
+					"ad_types": [
+						3617
+					],
+					"zone_ids": [
+						217758,
+						217995
+					]
+				}
+			]
+		},
+		"experimentData": {
+			"utmSource": "pocket-newtab"
+		},
+		"recentSavesData": [],
+		"isUserLoggedIn": false,
+		"recentSavesEnabled": false,
+		"pocketButtonEnabled": true,
+		"saveToPocketCard": true,
+		"hideDescriptions": false,
+		"compactImages": false,
+		"imageGradient": false,
+		"newSponsoredLabel": false,
+		"titleLines": 3,
+		"descLines": 3,
+		"readTime": true
+	},
+	"Search": {
+		"fakeFocus": false,
+		"hide": false
+	}
+};
+
+��2ot�           d���E�5�����       :about:home alt-data 1;92455,script version 20230804155314  ��

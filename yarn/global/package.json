@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "create-astro": "^4.8.3",
+    "create-expo": "^2.1.1",
+    "create-react-native": "^1.1.0",
+    "create-vite": "^5.5.2",
+    "react-native-cli": "^2.0.1"
+  }
+}

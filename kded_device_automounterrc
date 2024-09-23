@@ -1,0 +1,45 @@
+[Devices][/org/freedesktop/UDisks2/block_devices/loop0]
+Icon=application-vnd.efi.iso
+LastNameSeen=CCCOMA_X64FRE_EN-GB_DV9
+
+[Devices][/org/freedesktop/UDisks2/block_devices/nbd0p1]
+Icon=drive-harddisk
+LastNameSeen=EFI system partition
+
+[Devices][/org/freedesktop/UDisks2/block_devices/nbd0p3]
+Icon=drive-harddisk
+LastNameSeen=Basic data partition
+
+[Devices][/org/freedesktop/UDisks2/block_devices/nbd0p4]
+Icon=drive-harddisk
+LastNameSeen=530.0 MiB Internal Drive (nbd0p4)
+
+[Devices][/org/freedesktop/UDisks2/block_devices/nvme0n1p1]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=512.0 MiB Internal Drive (nvme0n1p1)
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/nvme0n1p2]
+EverMounted=true
+Icon=drive-harddisk-root
+LastNameSeen=931.0 GiB Internal Drive (nvme0n1p2)
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sda]
+Icon=drive-removable-media-usb
+LastNameSeen=NICENANO
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sda1]
+EverMounted=true
+Icon=drive-removable-media-usb-pendrive
+LastNameSeen=win101909
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sdb1]
+Icon=drive-removable-media-usb-pendrive
+LastNameSeen=Removable Media
+
+[General]
+AutomountEnabled=true
+AutomountOnPlugin=true
+AutomountUnknownDevices=true

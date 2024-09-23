@@ -1,0 +1,40 @@
+[Desktop Entry]
+FullScreen=true
+shouldShowMenuBarComingFromFullScreen=false
+shouldShowToolBarComingFromFullScreen=true
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+3440x1440 screen: Height=1385
+3440x1440 screen: Width=1692
+3440x1440 screen: XPosition=14
+3440x1440 screen: YPosition=41
+DP-0=DP-0
+HDMI-0=HDMI-0
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Resume.pdf
+File10[$e]=$HOME/Downloads/Untitled design.png
+File2[$e]=$HOME/Downloads/transactions-2022-04-06-2023-04-05.pdf
+File3[$e]=$HOME/Downloads/transactions-2023-04-01-2023-05-01.pdf
+File4[$e]=$HOME/Downloads/TaxBreakdown22.pdf
+File5[$e]=$HOME/Downloads/Employment22.pdf
+File6[$e]=$HOME/Downloads/taxReturn22.pdf
+File7[$e]=$HOME/portfolio/cv/public/PhilipGeorgeCV.pdf
+File8[$e]=$HOME/portfolio/cv/public/RM.pdf
+File9[$e]=$HOME/portfolio/cv/public/PhilipGeorgeCVWithDetail.pdf
+Name1[$e]=Resume.pdf
+Name10[$e]=Untitled design.png
+Name2[$e]=transactions-2022-04-06-2023-04-05.pdf
+Name3[$e]=transactions-2023-04-01-2023-05-01.pdf
+Name4[$e]=TaxBreakdown22.pdf
+Name5[$e]=Employment22.pdf
+Name6[$e]=taxReturn22.pdf
+Name7[$e]=PhilipGeorgeCV.pdf
+Name8[$e]=RM.pdf
+Name9[$e]=PhilipGeorgeCVWithDetail.pdf

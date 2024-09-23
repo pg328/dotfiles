@@ -1,0 +1,14 @@
+[$Version]
+update_info=spectacle_clipboard.upd:clipboard-settings-change,spectacle_rememberregion.upd:spectacle-migrate-rememberregion
+
+[GuiConfig]
+captureMode=0
+
+[ImageSave]
+lastImageSaveAsLocation=file:///home/phil/Downloads/zmk_newest/ZMK config layout images/sys.png
+lastImageSaveLocation=file:///home/phil/Pictures/Screenshot_20231119_200816.png
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Downloads/zmk_newest/ZMK config layout images/alpha.png,file:$HOME/Downloads/zmk_newest/ZMK config layout images/sys.png,file:$HOME/Downloads/zmk_newest/ZMK config layout images/nav_media.png,file:$HOME/Downloads/zmk_newest/ZMK config layout images/num_sym.png
+Recent URLs[$e]=file:$HOME/,file:$HOME/Documents/,file:$HOME/Downloads/zmk_newest/ZMK config layout images/
+detailViewIconSize=16

@@ -1,0 +1,45 @@
+[KDiskFree]
+Device=683
+Free=80
+Full%=50
+HeaderSectionIndices=0,1,2,3,4,5,6,7
+Icon=38
+MountPoint=120
+Size=80
+SortColumn=0
+SortOrder=0
+Type=838
+UsageBar=1177
+
+[KFileDialog Settings]
+Recent Files[$e]=9395165.jpg,file:///usr/bin/blkzone,file:$HOME/Downloads/illums.jpg,file:$HOME/Downloads/cropped-3440-1440-1229938.jpg,file:$HOME/Downloads/stretched-3440-1440-1229938.jpg,file:$HOME/Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYULTRALIGHTITALIC.OTF,file:$HOME/Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYTHINITALIC.OTF,file:$HOME/Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYSEMIBOLDITALIC.OTF,file:$HOME/Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF,file:$HOME/Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYMEDIUM.OTF,file:$HOME/Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYLIGHTITALIC.OTF,file:$HOME/Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYHEAVYITALIC.OTF,file:$HOME/Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYBOLD.OTF,file:$HOME/Downloads/sf-pro-display-cufonfonts/SFPRODISPLAYBLACKITALIC.OTF,file:$HOME/Downloads/bg.jpg,file:$HOME/Downloads/9395165.jpg
+Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/Pictures/,file:$HOME/,file:$HOME/Downloads/sf-pro-display-cufonfonts/,file:$HOME/Documents/,file:///usr/bin/
+detailViewIconSize=16
+
+[MainWindow]
+1440x3440 screen: Height=1033
+1440x3440 screen: Width=1402
+1440x3440 screen: Window-Maximized=true
+1440x3440 screen: XPosition=19
+1440x3440 screen: YPosition=69
+1920x1080 screen: Height=1025
+1920x1080 screen: Width=1326
+1920x1080 screen: XPosition=14
+1920x1080 screen: YPosition=41
+2 screens: Height=1080
+2 screens: Width=1920
+2 screens: XPosition=1920
+2 screens: YPosition=0
+2560x1440 screen: Height=1350
+2560x1440 screen: Width=2198
+3440x1440 screen: Height=1398
+3440x1440 screen: Width=1707
+3440x1440 screen: XPosition=1726
+3440x1440 screen: YPosition=34
+DP-0=DP-0
+HDMI-0=HDMI-0
+HDMI-0 HDMI-1=HDMI-1
+HDMI-1=HDMI-1
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABqsAAAV2AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled

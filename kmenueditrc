@@ -1,0 +1,12 @@
+[General]
+SplitterSizes=658,1023
+
+[MainWindow]
+3440x1440 screen: Height=1376
+3440x1440 screen: Width=1692
+3440x1440 screen: XPosition=19
+3440x1440 screen: YPosition=43
+HDMI-0=HDMI-0
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABpwAAAUdAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled

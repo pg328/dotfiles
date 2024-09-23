@@ -1,0 +1,13 @@
+[Number]
+NumberOfWindows=1
+
+[WindowProperties1]
+3440x1440 screen: Height=1356
+3440x1440 screen: Width=2215
+3440x1440 screen: XPosition=15
+3440x1440 screen: YPosition=15
+ClassName=SettingsBase
+DP-0=DP-0
+MenuBar=Disabled
+ObjectName=MainWindow#1
+State=AAAA/wAAAAD9AAAAAAAACKcAAAVMAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
