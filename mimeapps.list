@@ -1,10 +1,26 @@
 [Added Associations]
 image/png=okularApplication_kimgio.desktop;
-text/html=firefox-4.desktop;firefox-3.desktop;firefox-2.desktop;
+text/html=firefox-4.desktop;firefox-3.desktop;firefox-2.desktop;firefox.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/chrome=firefox.desktop;
+application/x-extension-htm=firefox.desktop;
+application/x-extension-html=firefox.desktop;
+application/x-extension-shtml=firefox.desktop;
+application/xhtml+xml=firefox.desktop;
+application/x-extension-xhtml=firefox.desktop;
+application/x-extension-xht=firefox.desktop;
 
 [Default Applications]
-text/html=firefox-4.desktop;
+text/html=firefox.desktop
 x-scheme-handler/about=google-chrome.desktop
-x-scheme-handler/http=google-chrome.desktop
-x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
 x-scheme-handler/unknown=google-chrome.desktop
+x-scheme-handler/chrome=firefox.desktop
+application/x-extension-htm=firefox.desktop
+application/x-extension-html=firefox.desktop
+application/x-extension-shtml=firefox.desktop
+application/xhtml+xml=firefox.desktop
+application/x-extension-xhtml=firefox.desktop
+application/x-extension-xht=firefox.desktop

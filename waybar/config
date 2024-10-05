@@ -20,8 +20,7 @@
       "custom/powermenu",
     ],
     "tray": {
-      "icon-size": 24,
-      "spacing": 10
+      "icon-size": 12,
     },
     "hyprland/window": {
       "format": " {}",
@@ -59,7 +58,7 @@
       }
     },
     "network": {
-      "interface": "enp34s0",
+      "interface": "enp5s0",
       "tooltip-format-ethernet": "{ifname} ",
       "interval": 2,
       "format": " {bandwidthDownBits}  {bandwidthUpBits}",
@@ -103,7 +102,7 @@
           "default": ["", ""]
       },
       "scroll-step": 1,
-      "on-click": "pavucontrol"
+      "on-click": "kitty -e alsamixer"
     },
     "clock": {
       //"format": "<span color=\"#56b6c2\"></span> {:%H:%M}",

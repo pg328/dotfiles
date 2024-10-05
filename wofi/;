@@ -53,14 +53,14 @@
 
 * {
   font-family: "Raleway";
-  font-size: 22px;
+  font-size: 24px;
 }
 
 /* Window */
 window {
   margin: 0px;
   padding: 10px;
-  border: 1px solid @base;
+  border: 0.16em solid @rosewater;
   border-radius: 0.1em;
   background-color: @crust;
   animation: slideIn 0.5s ease-in-out both;
@@ -82,8 +82,7 @@ window {
   margin: 5px;
   padding: 10px;
   border: none;
-  border-radius: 4px;
-  background-color: @mantle;
+  background-color: @base;
   animation: fadeIn 0.5s ease-in-out both;
 }
 
@@ -103,7 +102,7 @@ window {
   margin: 5px;
   padding: 10px;
   border: none;
-  background-color: @mantle;
+  background-color: @base;
 }
 
 /* Scroll */
@@ -111,19 +110,18 @@ window {
   margin: 0px;
   padding: 10px;
   border: none;
-  background-color: @mantle;
+  background-color: @base;
 }
 
 /* Input */
 #input {
   margin: 5px 20px;
-  padding: 20px;
+  padding: 10px;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.1em;
   color: @text;
-  background-color: @base;
+  background-color: @crust;
   animation: fadeIn 0.5s ease-in-out both;
-  font-size: 24px;
 }
 
 #input image {
@@ -132,7 +130,7 @@ window {
 }
 
 #input * {
-  outline: 4px solid @mantle!important;
+  outline: 4px solid @red!important;
 }
 
 /* Text */
@@ -144,25 +142,21 @@ window {
 }
 
 #entry {
-  border-radius: 4px;
-  padding: 4px;
-  margin: 4px;
+  background-color: @base;
 }
 
 #entry arrow {
   border: none;
-  /*color: @rosewater;*/
+  color: @lavender;
 }
 
 /* Selected Entry */
 #entry:selected {
-  background-color: @base;
-  border: 1px solid @peach;
-  border-radius: 4px;
+  border: 0.11em solid @lavender;
 }
 
 #entry:selected #text {
-  color: @text;
+  color: @rosewater;
 }
 
 #entry:drop(active) {
