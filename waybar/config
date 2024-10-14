@@ -74,7 +74,7 @@
       "tooltip": "false"
     },
     "cpu": {
-      "format": "  {usage}%",
+      "format": "   {usage}%",
       "tooltip": "false"
     },
     "custom/powermenu": {

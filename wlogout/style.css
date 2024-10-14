@@ -5,26 +5,26 @@ window {
   background-color: rgba(0, 0, 0, 0.4);
 }
 button {
-  color: #ffffff;
-  background-color: #1e222a;
+  color: #bac2de;
+  background-color: #11111b;
   border-style: solid;
-  border-color: #ffaaff;
-  border-width: 2px;
-  border-radius: 16px;
+  border-color: #fab387;
+  border-width: 1px;
+  border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 25%;
-  margin: 50px;
+  margin: 20px;
 }
 
 button:focus,
 button:active {
-  background-color: #ffaaff;
+  background-color: #1e1e2e;
   outline-style: none;
 }
 
 button:hover {
-  background-color: #353c4a;
+  background-color: #585b70;
 }
 
 #lock {

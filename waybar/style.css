@@ -9,13 +9,15 @@
   color: @text;
 }
 #waybar {
-  background: @base-terminal;
+  background: @crust;
   border: @base 1px solid;
   color: @text;
   font-size: 20px;
   font-family: "Raleway";
   font-weight: 400;
   border-radius: 4px;
+  margin: 10px;
+  padding: 5px;
 }
 
 #workspaces button {
@@ -45,6 +47,7 @@
 
 #window {
   color: #929db1;
+  margin: 16px;
 }
 
 #tray {
@@ -56,16 +59,11 @@
   padding: 4px 8px;
   background-color: @base;
   border-radius: 20px;
-  margin: 6px 6px 6px 4px;
+  margin: 12px 12px 12px 4px;
 }
 
 #custom-updates {
   color: #1788e4;
-}
-
-#custom-powermenu {
-  color: #e06c75;
-  margin: 0px 8px;
 }
 
 #scratchpad {
@@ -75,24 +73,24 @@
 }
 
 #pulseaudio {
-  color: @red;
+  color: @lavender;
   padding-right: 14px;
 }
 
-#cpu {
-  color: @yellow;
-}
-
 #memory {
-  color: @peach;
-}
-
-#network {
   color: @blue;
 }
 
-#temperature {
+#cpu {
   color: @green;
+}
+
+#network {
+  color: @yellow;
+}
+
+#temperature {
+  color: @peach;
 }
 
 #clock {
@@ -100,4 +98,9 @@
   margin-left: 20px;
   opacity: 0.7;
   font-size: 18px;
+}
+
+#custom-powermenu {
+  color: @red;
+  margin: 0px 8px;
 }

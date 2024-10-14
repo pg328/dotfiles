@@ -1,6 +1,6 @@
 {
-    "label" : "lock",
-    "action" : "swaylock",
+    "label" : "lock screen",
+    "action" : "lock",
     "text" : "Lock"
 }
 
@@ -11,7 +11,7 @@
 }
 
 {
-    "label" : "logout",
+    "label" : "log out",
     "action" : "hyprctl dispatch exit",
     "text" : "Logout"
 }
