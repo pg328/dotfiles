@@ -1,0 +1,55 @@
+[
+  {
+    "config_version": 2,
+    "id": "a60c8aa3-ae9c-440b-a3a0-d3d432ab1fc3",
+    "archive_prefix": "e97e1d-",
+    "repo_id": "707d46511eb51eb3c0a31d8fea0a83de3c2976be562d2a17a621d9e9f2ac7f2c",
+    "repo": {
+      "type": "Local",
+      "path": "backup-philbot-phil",
+      "mount_path": "/run/media/phil/8F1E-4692",
+      "uri": "file:///run/media/phil/8F1E-4692/backup-philbot-phil",
+      "drive_name": null,
+      "mount_name": "8F1E-4692",
+      "volume_uuid": null,
+      "volume_uuid_identifier": null,
+      "removable": false,
+      "icon": ". GThemedIcon drive-harddisk drive drive-harddisk-symbolic drive-symbolic",
+      "icon_symbolic": ". GThemedIcon drive-harddisk-symbolic drive-symbolic drive-harddisk drive",
+      "settings": {
+        "command_line_args": []
+      }
+    },
+    "encrypted": true,
+    "encryption_mode": "repokey",
+    "include": [
+      ""
+    ],
+    "exclude": [
+      "Caches"
+    ],
+    "schedule": {
+      "enabled": false,
+      "settings": {
+        "run_on_battery": false
+      },
+      "frequency": {
+        "Daily": {
+          "preferred_time": "17:00:00"
+        }
+      }
+    },
+    "prune": {
+      "enabled": false,
+      "keep": {
+        "hourly": 48,
+        "daily": 14,
+        "weekly": 4,
+        "monthly": 12,
+        "yearly": 10
+      }
+    },
+    "title": "Backup USB",
+    "user_scripts": {}
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "a60c8aa3-ae9c-440b-a3a0-d3d432ab1fc3": {
+    "config_version": 2,
+    "run": [
+      {
+        "end": "2024-10-15T15:32:32.480552057+01:00",
+        "outcome": {
+          "Completed": {
+            "stats": {
+              "archive": {
+                "duration": 1287.355407,
+                "id": "777edc96ccbb9ada55a1683720a84a90d9f6aed38662e36b4437913d2938e792",
+                "name": "e97e1d-abf142c3",
+                "stats": {
+                  "compressed_size": 98075882010,
+                  "deduplicated_size": 91100719684,
+                  "nfiles": 887084,
+                  "original_size": 143908757811
+                }
+              }
+            }
+          }
+        },
+        "messages": [],
+        "include": [
+          ""
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      }
+    ],
+    "running": null,
+    "last_completed": {
+      "end": "2024-10-15T15:32:32.480552057+01:00",
+      "outcome": {
+        "Completed": {
+          "stats": {
+            "archive": {
+              "duration": 1287.355407,
+              "id": "777edc96ccbb9ada55a1683720a84a90d9f6aed38662e36b4437913d2938e792",
+              "name": "e97e1d-abf142c3",
+              "stats": {
+                "compressed_size": 98075882010,
+                "deduplicated_size": 91100719684,
+                "nfiles": 887084,
+                "original_size": 143908757811
+              }
+            }
+          }
+        }
+      },
+      "messages": [],
+      "include": [
+        ""
+      ],
+      "exclude": [
+        "Caches"
+      ]
+    },
+    "last_check": {
+      "end": "2024-10-15T19:21:51.742753548+01:00",
+      "outcome": "Success"
+    },
+    "suggested_exclude": {
+      "PermissionDenied": []
+    }
+  }
+}
