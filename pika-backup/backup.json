@@ -23,7 +23,8 @@
     "encrypted": true,
     "encryption_mode": "repokey",
     "include": [
-      ""
+      "",
+      "/etc/libvirt"
     ],
     "exclude": [
       "Caches"
@@ -31,7 +32,7 @@
     "schedule": {
       "enabled": false,
       "settings": {
-        "run_on_battery": false
+        "run_on_battery": true
       },
       "frequency": {
         "Daily": {
@@ -49,7 +50,7 @@
         "yearly": 10
       }
     },
-    "title": "Backup USB",
+    "title": "Phil - BackupDrive",
     "user_scripts": {}
   }
 ]

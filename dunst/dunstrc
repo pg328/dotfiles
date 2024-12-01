@@ -193,7 +193,7 @@
     always_run_script = true
 
     # Define the title of the windows spawned by dunst
-    title = "Notification"
+    title = "New!"
 
     # Define the class of the windows spawned by dunst
     class = Dunst

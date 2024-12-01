@@ -3,6 +3,1445 @@
     "config_version": 2,
     "run": [
       {
+        "end": "2024-11-09T19:20:35.096267345+00:00",
+        "outcome": {
+          "Completed": {
+            "stats": {
+              "archive": {
+                "duration": 36.735199,
+                "id": "21483f3bf287b9f0c204360f5ecf84efdf117093ccfe6fc26629bb86db517c68",
+                "name": "e97e1d-d210eada",
+                "stats": {
+                  "compressed_size": 98364269447,
+                  "deduplicated_size": 2039928,
+                  "nfiles": 891088,
+                  "original_size": 145073457455
+                }
+              }
+            }
+          }
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-arp-ip-spoofing.xml: open: [Errno 13] Permission denied: 'no-arp-ip-spoofing.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-incoming-ipv4.xml: open: [Errno 13] Permission denied: 'allow-incoming-ipv4.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-ipv6-spoofing.xml: open: [Errno 13] Permission denied: 'no-ipv6-spoofing.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-other-l2-traffic.xml: open: [Errno 13] Permission denied: 'no-other-l2-traffic.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-ipv6.xml: open: [Errno 13] Permission denied: 'allow-ipv6.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-mac-spoofing.xml: open: [Errno 13] Permission denied: 'no-mac-spoofing.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-dhcp-server.xml: open: [Errno 13] Permission denied: 'allow-dhcp-server.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-ip-multicast.xml: open: [Errno 13] Permission denied: 'no-ip-multicast.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-mac-broadcast.xml: open: [Errno 13] Permission denied: 'no-mac-broadcast.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/qemu-announce-self.xml: open: [Errno 13] Permission denied: 'qemu-announce-self.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-ip-spoofing.xml: open: [Errno 13] Permission denied: 'no-ip-spoofing.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-dhcp.xml: open: [Errno 13] Permission denied: 'allow-dhcp.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-arp.xml: open: [Errno 13] Permission denied: 'allow-arp.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-arp-mac-spoofing.xml: open: [Errno 13] Permission denied: 'no-arp-mac-spoofing.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-ipv6-multicast.xml: open: [Errno 13] Permission denied: 'no-ipv6-multicast.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-dhcpv6.xml: open: [Errno 13] Permission denied: 'allow-dhcpv6.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-ipv4.xml: open: [Errno 13] Permission denied: 'allow-ipv4.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-other-rarp-traffic.xml: open: [Errno 13] Permission denied: 'no-other-rarp-traffic.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/qemu-announce-self-rarp.xml: open: [Errno 13] Permission denied: 'qemu-announce-self-rarp.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/clean-traffic.xml: open: [Errno 13] Permission denied: 'clean-traffic.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-arp-spoofing.xml: open: [Errno 13] Permission denied: 'no-arp-spoofing.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/clean-traffic-gateway.xml: open: [Errno 13] Permission denied: 'clean-traffic-gateway.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-incoming-ipv6.xml: open: [Errno 13] Permission denied: 'allow-incoming-ipv6.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-dhcpv6-server.xml: open: [Errno 13] Permission denied: 'allow-dhcpv6-server.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/qemu/win10_old.xml: open: [Errno 13] Permission denied: 'win10_old.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/qemu/nixos-24.05.xml: open: [Errno 13] Permission denied: 'nixos-24.05.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/qemu/nixos.xml: open: [Errno 13] Permission denied: 'nixos.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/qemu/networks/default.xml: open: [Errno 13] Permission denied: 'default.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/qemu/networks/br10.xml: open: [Errno 13] Permission denied: 'br10.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/secrets: dir_open: [Errno 13] Permission denied: 'secrets'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/storage/default.xml: open: [Errno 13] Permission denied: 'default.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/storage/nvram.xml: open: [Errno 13] Permission denied: 'nvram.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/storage/Downloads.xml: open: [Errno 13] Permission denied: 'Downloads.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          }
+        ],
+        "include": [
+          "",
+          "/etc/libvirt"
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      },
+      {
+        "end": "2024-11-09T19:18:44.017998308+00:00",
+        "outcome": {
+          "Completed": {
+            "stats": {
+              "archive": {
+                "duration": 109.472947,
+                "id": "7c216cf4ac2992025e0aed8a976c0c7890a0a6ba4517d8d7a4432b1873bc4af4",
+                "name": "e97e1d-539a03f2",
+                "stats": {
+                  "compressed_size": 196054088001,
+                  "deduplicated_size": 808923046,
+                  "nfiles": 1701369,
+                  "original_size": 287952159900
+                }
+              }
+            }
+          }
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "passphrase supplied in BORG_PASSPHRASE, by BORG_PASSCOMMAND or via BORG_PASSPHRASE_FD is incorrect.",
+              "msgid": "PassphraseWrong"
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/pacman.d/gnupg/openpgp-revocs.d: dir_open: [Errno 13] Permission denied: 'openpgp-revocs.d'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/pacman.d/gnupg/secring.gpg: open: [Errno 13] Permission denied: 'secring.gpg'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/pacman.d/gnupg/private-keys-v1.d: dir_open: [Errno 13] Permission denied: 'private-keys-v1.d'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/pacman.d/gnupg/crls.d: dir_open: [Errno 13] Permission denied: 'crls.d'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/crypttab: open: [Errno 13] Permission denied: 'crypttab'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/sudoers.pacnew: open: [Errno 13] Permission denied: 'sudoers.pacnew'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/audit/audisp-filter.conf: open: [Errno 13] Permission denied: 'audisp-filter.conf'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/audit/audisp-remote.conf: open: [Errno 13] Permission denied: 'audisp-remote.conf'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/audit/plugins.d: dir_open: [Errno 13] Permission denied: 'plugins.d'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/audit/zos-remote.conf: open: [Errno 13] Permission denied: 'zos-remote.conf'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/default/useradd: open: [Errno 13] Permission denied: 'useradd'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/.pwd.lock: open: [Errno 13] Permission denied: '.pwd.lock'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/credstore: dir_open: [Errno 13] Permission denied: 'credstore'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/credstore.encrypted: dir_open: [Errno 13] Permission denied: 'credstore.encrypted'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/sudoers.d: dir_open: [Errno 13] Permission denied: 'sudoers.d'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/ssh/ssh_host_rsa_key: open: [Errno 13] Permission denied: 'ssh_host_rsa_key'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/ssh/ssh_host_ecdsa_key: open: [Errno 13] Permission denied: 'ssh_host_ecdsa_key'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/ssh/ssh_host_ed25519_key: open: [Errno 13] Permission denied: 'ssh_host_ed25519_key'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/named.conf: open: [Errno 13] Permission denied: 'named.conf'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libaudit.conf: open: [Errno 13] Permission denied: 'libaudit.conf'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/brlapi.key: open: [Errno 13] Permission denied: 'brlapi.key'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/shadow-: open: [Errno 13] Permission denied: 'shadow-'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/sudoers: open: [Errno 13] Permission denied: 'sudoers'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/gshadow-: open: [Errno 13] Permission denied: 'gshadow-'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/gshadow: open: [Errno 13] Permission denied: 'gshadow'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/shadow: open: [Errno 13] Permission denied: 'shadow'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/fwupd/fwupd.conf: open: [Errno 13] Permission denied: 'fwupd.conf'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/ppp/chap-secrets.example: open: [Errno 13] Permission denied: 'chap-secrets.example'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/ppp/eaptls-client.example: open: [Errno 13] Permission denied: 'eaptls-client.example'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/ppp/eaptls-server.example: open: [Errno 13] Permission denied: 'eaptls-server.example'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/ppp/pap-secrets.example: open: [Errno 13] Permission denied: 'pap-secrets.example'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/samba/private: dir_open: [Errno 13] Permission denied: 'private'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-arp-ip-spoofing.xml: open: [Errno 13] Permission denied: 'no-arp-ip-spoofing.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-incoming-ipv4.xml: open: [Errno 13] Permission denied: 'allow-incoming-ipv4.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-ipv6-spoofing.xml: open: [Errno 13] Permission denied: 'no-ipv6-spoofing.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-other-l2-traffic.xml: open: [Errno 13] Permission denied: 'no-other-l2-traffic.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-ipv6.xml: open: [Errno 13] Permission denied: 'allow-ipv6.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-mac-spoofing.xml: open: [Errno 13] Permission denied: 'no-mac-spoofing.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-dhcp-server.xml: open: [Errno 13] Permission denied: 'allow-dhcp-server.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-ip-multicast.xml: open: [Errno 13] Permission denied: 'no-ip-multicast.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-mac-broadcast.xml: open: [Errno 13] Permission denied: 'no-mac-broadcast.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/qemu-announce-self.xml: open: [Errno 13] Permission denied: 'qemu-announce-self.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-ip-spoofing.xml: open: [Errno 13] Permission denied: 'no-ip-spoofing.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-dhcp.xml: open: [Errno 13] Permission denied: 'allow-dhcp.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-arp.xml: open: [Errno 13] Permission denied: 'allow-arp.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-arp-mac-spoofing.xml: open: [Errno 13] Permission denied: 'no-arp-mac-spoofing.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-ipv6-multicast.xml: open: [Errno 13] Permission denied: 'no-ipv6-multicast.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-dhcpv6.xml: open: [Errno 13] Permission denied: 'allow-dhcpv6.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-ipv4.xml: open: [Errno 13] Permission denied: 'allow-ipv4.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-other-rarp-traffic.xml: open: [Errno 13] Permission denied: 'no-other-rarp-traffic.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/qemu-announce-self-rarp.xml: open: [Errno 13] Permission denied: 'qemu-announce-self-rarp.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/clean-traffic.xml: open: [Errno 13] Permission denied: 'clean-traffic.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/no-arp-spoofing.xml: open: [Errno 13] Permission denied: 'no-arp-spoofing.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/clean-traffic-gateway.xml: open: [Errno 13] Permission denied: 'clean-traffic-gateway.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-incoming-ipv6.xml: open: [Errno 13] Permission denied: 'allow-incoming-ipv6.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/nwfilter/allow-dhcpv6-server.xml: open: [Errno 13] Permission denied: 'allow-dhcpv6-server.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/qemu/win10_old.xml: open: [Errno 13] Permission denied: 'win10_old.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/qemu/nixos-24.05.xml: open: [Errno 13] Permission denied: 'nixos-24.05.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/qemu/nixos.xml: open: [Errno 13] Permission denied: 'nixos.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/qemu/networks/default.xml: open: [Errno 13] Permission denied: 'default.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/qemu/networks/br10.xml: open: [Errno 13] Permission denied: 'br10.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/secrets: dir_open: [Errno 13] Permission denied: 'secrets'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/storage/default.xml: open: [Errno 13] Permission denied: 'default.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/storage/nvram.xml: open: [Errno 13] Permission denied: 'nvram.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/libvirt/storage/Downloads.xml: open: [Errno 13] Permission denied: 'Downloads.xml'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/cryptsetup-keys.d: dir_open: [Errno 13] Permission denied: 'cryptsetup-keys.d'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/polkit-1/rules.d: dir_open: [Errno 13] Permission denied: 'rules.d'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/NetworkManager/system-connections: dir_open: [Errno 13] Permission denied: 'system-connections'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "WARNING",
+              "name": "borg.archiver",
+              "message": "/etc/cni/net.d: dir_open: [Errno 13] Permission denied: 'net.d'",
+              "msgid": {
+                "Other": "BackupPermissionError"
+              }
+            }
+          }
+        ],
+        "include": [
+          "",
+          "/etc",
+          "/home"
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      },
+      {
+        "end": "2024-11-09T18:20:39.628257436+00:00",
+        "outcome": {
+          "Failed": "LockFailed"
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.3p13rr68.tmp').",
+              "msgid": "LockFailed"
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Traceback (most recent call last):\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5391, in main\n    exit_code = archiver.run(args)\n                ^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5309, in run\n    rc = func(args)\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 176, in wrapper\n    with repository:\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 217, in __enter__\n    self.open(self.path, bool(self.exclusive), lock_wait=self.lock_wait, lock=self.do_lock)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 465, in open\n    self.lock = Lock(os.path.join(path, 'lock'), exclusive, timeout=lock_wait).acquire()\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 395, in acquire\n    self._wait_for_readers_finishing(remove, sleep)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 408, in _wait_for_readers_finishing\n    self._lock.acquire()\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 143, in acquire\n    raise LockFailed(self.path, str(err)) from None\nborg.locking.LockFailed: Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.3p13rr68.tmp').\n\nPlatform: Linux philbot 6.11.5-arch1-1 #1 SMP PREEMPT_DYNAMIC Tue, 22 Oct 2024 18:31:38 +0000 x86_64\nLinux: Unknown Linux  \nBorg: 1.4.0  Python: CPython 3.12.6 msgpack: 1.0.8 fuse: pyfuse3 3.4.0 [pyfuse3,llfuse]\nPID: 19706  CWD: /home/phil/.config/home-manager\nsys.argv: ['/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/bin/borg', 'create', '--rsh', 'ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new', '--progress', '--json', '--compression=zstd', '--log-json', '--exclude=pp:/home/phil/.cache', '--exclude=re:^home/phil/\\\\.var/app/[^/]+/cache/', '--exclude-caches', '--', '/run/media/phil/8F1E-4692/backup-philbot-phil::e97e1d-0d25b886', '/home/phil/']\nSSH_ORIGINAL_COMMAND: None\n",
+              "msgid": "Undefined"
+            }
+          }
+        ],
+        "include": [
+          ""
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      },
+      {
+        "end": "2024-11-09T18:20:34.233647964+00:00",
+        "outcome": {
+          "Failed": "Repository.DoesNotExist"
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Repository /run/media/phil/8F1E-4692/backup-philbot-phil does not exist.",
+              "msgid": "Repository.DoesNotExist"
+            }
+          }
+        ],
+        "include": [
+          ""
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      },
+      {
+        "end": "2024-11-09T18:18:08.889669479+00:00",
+        "outcome": {
+          "Failed": "LockFailed"
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.8_o7_ba1.tmp').",
+              "msgid": "LockFailed"
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Traceback (most recent call last):\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5391, in main\n    exit_code = archiver.run(args)\n                ^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5309, in run\n    rc = func(args)\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 176, in wrapper\n    with repository:\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 217, in __enter__\n    self.open(self.path, bool(self.exclusive), lock_wait=self.lock_wait, lock=self.do_lock)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 465, in open\n    self.lock = Lock(os.path.join(path, 'lock'), exclusive, timeout=lock_wait).acquire()\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 395, in acquire\n    self._wait_for_readers_finishing(remove, sleep)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 408, in _wait_for_readers_finishing\n    self._lock.acquire()\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 143, in acquire\n    raise LockFailed(self.path, str(err)) from None\nborg.locking.LockFailed: Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.8_o7_ba1.tmp').\n\nPlatform: Linux philbot 6.11.5-arch1-1 #1 SMP PREEMPT_DYNAMIC Tue, 22 Oct 2024 18:31:38 +0000 x86_64\nLinux: Unknown Linux  \nBorg: 1.4.0  Python: CPython 3.12.6 msgpack: 1.0.8 fuse: pyfuse3 3.4.0 [pyfuse3,llfuse]\nPID: 19486  CWD: /home/phil/.config/home-manager\nsys.argv: ['/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/bin/borg', 'create', '--rsh', 'ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new', '--progress', '--json', '--compression=zstd', '--log-json', '--exclude=pp:/home/phil/.cache', '--exclude=re:^home/phil/\\\\.var/app/[^/]+/cache/', '--exclude-caches', '--', '/run/media/phil/8F1E-4692/backup-philbot-phil::e97e1d-14bd2701', '/home/phil/']\nSSH_ORIGINAL_COMMAND: None\n",
+              "msgid": "Undefined"
+            }
+          }
+        ],
+        "include": [
+          ""
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      },
+      {
+        "end": "2024-11-09T18:17:59.812701481+00:00",
+        "outcome": {
+          "Failed": "LockFailed"
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.nc8j2kje.tmp').",
+              "msgid": "LockFailed"
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Traceback (most recent call last):\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5391, in main\n    exit_code = archiver.run(args)\n                ^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5309, in run\n    rc = func(args)\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 176, in wrapper\n    with repository:\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 217, in __enter__\n    self.open(self.path, bool(self.exclusive), lock_wait=self.lock_wait, lock=self.do_lock)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 465, in open\n    self.lock = Lock(os.path.join(path, 'lock'), exclusive, timeout=lock_wait).acquire()\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 395, in acquire\n    self._wait_for_readers_finishing(remove, sleep)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 408, in _wait_for_readers_finishing\n    self._lock.acquire()\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 143, in acquire\n    raise LockFailed(self.path, str(err)) from None\nborg.locking.LockFailed: Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.nc8j2kje.tmp').\n\nPlatform: Linux philbot 6.11.5-arch1-1 #1 SMP PREEMPT_DYNAMIC Tue, 22 Oct 2024 18:31:38 +0000 x86_64\nLinux: Unknown Linux  \nBorg: 1.4.0  Python: CPython 3.12.6 msgpack: 1.0.8 fuse: pyfuse3 3.4.0 [pyfuse3,llfuse]\nPID: 19459  CWD: /home/phil/.config/home-manager\nsys.argv: ['/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/bin/borg', 'create', '--rsh', 'ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new', '--progress', '--json', '--compression=zstd', '--log-json', '--exclude=pp:/home/phil/.cache', '--exclude=re:^home/phil/\\\\.var/app/[^/]+/cache/', '--exclude-caches', '--', '/run/media/phil/8F1E-4692/backup-philbot-phil::e97e1d-1b3bb74a', '/home/phil/']\nSSH_ORIGINAL_COMMAND: None\n",
+              "msgid": "Undefined"
+            }
+          }
+        ],
+        "include": [
+          ""
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      },
+      {
+        "end": "2024-11-09T18:17:16.720988993+00:00",
+        "outcome": {
+          "Failed": "LockFailed"
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.rjy3jifn.tmp').",
+              "msgid": "LockFailed"
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Traceback (most recent call last):\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5391, in main\n    exit_code = archiver.run(args)\n                ^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5309, in run\n    rc = func(args)\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 176, in wrapper\n    with repository:\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 217, in __enter__\n    self.open(self.path, bool(self.exclusive), lock_wait=self.lock_wait, lock=self.do_lock)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 465, in open\n    self.lock = Lock(os.path.join(path, 'lock'), exclusive, timeout=lock_wait).acquire()\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 395, in acquire\n    self._wait_for_readers_finishing(remove, sleep)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 408, in _wait_for_readers_finishing\n    self._lock.acquire()\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 143, in acquire\n    raise LockFailed(self.path, str(err)) from None\nborg.locking.LockFailed: Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.rjy3jifn.tmp').\n\nPlatform: Linux philbot 6.11.5-arch1-1 #1 SMP PREEMPT_DYNAMIC Tue, 22 Oct 2024 18:31:38 +0000 x86_64\nLinux: Unknown Linux  \nBorg: 1.4.0  Python: CPython 3.12.6 msgpack: 1.0.8 fuse: pyfuse3 3.4.0 [pyfuse3,llfuse]\nPID: 18880  CWD: /home/phil/.config/home-manager\nsys.argv: ['/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/bin/borg', 'create', '--rsh', 'ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new', '--progress', '--json', '--compression=zstd', '--log-json', '--exclude=pp:/home/phil/.cache', '--exclude=re:^home/phil/\\\\.var/app/[^/]+/cache/', '--exclude-caches', '--', '/run/media/phil/8F1E-4692/backup-philbot-phil::e97e1d-3caf5994', '/home/phil/']\nSSH_ORIGINAL_COMMAND: None\n",
+              "msgid": "Undefined"
+            }
+          }
+        ],
+        "include": [
+          ""
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      },
+      {
+        "end": "2024-11-09T18:17:10.986076973+00:00",
+        "outcome": {
+          "Failed": "Repository.DoesNotExist"
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Repository /run/media/phil/8F1E-4692/backup-philbot-phil does not exist.",
+              "msgid": "Repository.DoesNotExist"
+            }
+          }
+        ],
+        "include": [
+          ""
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      },
+      {
+        "end": "2024-11-09T18:17:05.358104558+00:00",
+        "outcome": {
+          "Failed": "LockFailed"
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.g53qymu5.tmp').",
+              "msgid": "LockFailed"
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Traceback (most recent call last):\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5391, in main\n    exit_code = archiver.run(args)\n                ^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5309, in run\n    rc = func(args)\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 176, in wrapper\n    with repository:\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 217, in __enter__\n    self.open(self.path, bool(self.exclusive), lock_wait=self.lock_wait, lock=self.do_lock)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 465, in open\n    self.lock = Lock(os.path.join(path, 'lock'), exclusive, timeout=lock_wait).acquire()\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 395, in acquire\n    self._wait_for_readers_finishing(remove, sleep)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 408, in _wait_for_readers_finishing\n    self._lock.acquire()\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 143, in acquire\n    raise LockFailed(self.path, str(err)) from None\nborg.locking.LockFailed: Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.g53qymu5.tmp').\n\nPlatform: Linux philbot 6.11.5-arch1-1 #1 SMP PREEMPT_DYNAMIC Tue, 22 Oct 2024 18:31:38 +0000 x86_64\nLinux: Unknown Linux  \nBorg: 1.4.0  Python: CPython 3.12.6 msgpack: 1.0.8 fuse: pyfuse3 3.4.0 [pyfuse3,llfuse]\nPID: 18836  CWD: /home/phil/.config/home-manager\nsys.argv: ['/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/bin/borg', 'create', '--rsh', 'ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new', '--progress', '--json', '--compression=zstd', '--log-json', '--exclude=pp:/home/phil/.cache', '--exclude=re:^home/phil/\\\\.var/app/[^/]+/cache/', '--exclude-caches', '--', '/run/media/phil/8F1E-4692/backup-philbot-phil::e97e1d-bf852361', '/home/phil/']\nSSH_ORIGINAL_COMMAND: None\n",
+              "msgid": "Undefined"
+            }
+          }
+        ],
+        "include": [
+          ""
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      },
+      {
+        "end": "2024-11-09T18:13:16.334719518+00:00",
+        "outcome": {
+          "Failed": "LockFailed"
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.selg1hf5.tmp').",
+              "msgid": "LockFailed"
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Traceback (most recent call last):\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5391, in main\n    exit_code = archiver.run(args)\n                ^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5309, in run\n    rc = func(args)\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 176, in wrapper\n    with repository:\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 217, in __enter__\n    self.open(self.path, bool(self.exclusive), lock_wait=self.lock_wait, lock=self.do_lock)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 465, in open\n    self.lock = Lock(os.path.join(path, 'lock'), exclusive, timeout=lock_wait).acquire()\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 395, in acquire\n    self._wait_for_readers_finishing(remove, sleep)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 408, in _wait_for_readers_finishing\n    self._lock.acquire()\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 143, in acquire\n    raise LockFailed(self.path, str(err)) from None\nborg.locking.LockFailed: Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.selg1hf5.tmp').\n\nPlatform: Linux philbot 6.11.5-arch1-1 #1 SMP PREEMPT_DYNAMIC Tue, 22 Oct 2024 18:31:38 +0000 x86_64\nLinux: Unknown Linux  \nBorg: 1.4.0  Python: CPython 3.12.6 msgpack: 1.0.8 fuse: pyfuse3 3.4.0 [pyfuse3,llfuse]\nPID: 18239  CWD: /home/phil/.config/home-manager\nsys.argv: ['/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/bin/borg', 'create', '--rsh', 'ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new', '--progress', '--json', '--compression=zstd', '--log-json', '--exclude=pp:/home/phil/.cache', '--exclude=re:^home/phil/\\\\.var/app/[^/]+/cache/', '--exclude-caches', '--', '/run/media/phil/8F1E-4692/backup-philbot-phil::e97e1d-6d66320c', '/home/phil/']\nSSH_ORIGINAL_COMMAND: None\n",
+              "msgid": "Undefined"
+            }
+          }
+        ],
+        "include": [
+          ""
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      },
+      {
+        "end": "2024-11-09T18:13:00.973194857+00:00",
+        "outcome": {
+          "Failed": "LockFailed"
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.3942rj7o.tmp').",
+              "msgid": "LockFailed"
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Traceback (most recent call last):\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5391, in main\n    exit_code = archiver.run(args)\n                ^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5309, in run\n    rc = func(args)\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 176, in wrapper\n    with repository:\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 217, in __enter__\n    self.open(self.path, bool(self.exclusive), lock_wait=self.lock_wait, lock=self.do_lock)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 465, in open\n    self.lock = Lock(os.path.join(path, 'lock'), exclusive, timeout=lock_wait).acquire()\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 395, in acquire\n    self._wait_for_readers_finishing(remove, sleep)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 408, in _wait_for_readers_finishing\n    self._lock.acquire()\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 143, in acquire\n    raise LockFailed(self.path, str(err)) from None\nborg.locking.LockFailed: Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.3942rj7o.tmp').\n\nPlatform: Linux philbot 6.11.5-arch1-1 #1 SMP PREEMPT_DYNAMIC Tue, 22 Oct 2024 18:31:38 +0000 x86_64\nLinux: Unknown Linux  \nBorg: 1.4.0  Python: CPython 3.12.6 msgpack: 1.0.8 fuse: pyfuse3 3.4.0 [pyfuse3,llfuse]\nPID: 18153  CWD: /home/phil/.config/home-manager\nsys.argv: ['/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/bin/borg', 'create', '--rsh', 'ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new', '--progress', '--json', '--compression=zstd', '--log-json', '--exclude=pp:/home/phil/.cache', '--exclude=re:^home/phil/\\\\.var/app/[^/]+/cache/', '--exclude-caches', '--', '/run/media/phil/8F1E-4692/backup-philbot-phil::e97e1d-d9bcc15b', '/home/phil/']\nSSH_ORIGINAL_COMMAND: None\n",
+              "msgid": "Undefined"
+            }
+          }
+        ],
+        "include": [
+          ""
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      },
+      {
+        "end": "2024-11-09T18:12:57.431906079+00:00",
+        "outcome": {
+          "Failed": "LockFailed"
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.33mt7fb7.tmp').",
+              "msgid": "LockFailed"
+            }
+          },
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Traceback (most recent call last):\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5391, in main\n    exit_code = archiver.run(args)\n                ^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 5309, in run\n    rc = func(args)\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/archiver.py\", line 176, in wrapper\n    with repository:\n         ^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 217, in __enter__\n    self.open(self.path, bool(self.exclusive), lock_wait=self.lock_wait, lock=self.do_lock)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/repository.py\", line 465, in open\n    self.lock = Lock(os.path.join(path, 'lock'), exclusive, timeout=lock_wait).acquire()\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 395, in acquire\n    self._wait_for_readers_finishing(remove, sleep)\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 408, in _wait_for_readers_finishing\n    self._lock.acquire()\n  File \"/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/lib/python3.12/site-packages/borg/locking.py\", line 143, in acquire\n    raise LockFailed(self.path, str(err)) from None\nborg.locking.LockFailed: Failed to create/acquire the lock /run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive ([Errno 30] Read-only file system: '/run/media/phil/8F1E-4692/backup-philbot-phil/lock.exclusive.33mt7fb7.tmp').\n\nPlatform: Linux philbot 6.11.5-arch1-1 #1 SMP PREEMPT_DYNAMIC Tue, 22 Oct 2024 18:31:38 +0000 x86_64\nLinux: Unknown Linux  \nBorg: 1.4.0  Python: CPython 3.12.6 msgpack: 1.0.8 fuse: pyfuse3 3.4.0 [pyfuse3,llfuse]\nPID: 18137  CWD: /home/phil/.config/home-manager\nsys.argv: ['/nix/store/7j37h8x9gadv3hdmjx93c8g9qzbl3x68-borgbackup-1.4.0/bin/borg', 'create', '--rsh', 'ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new', '--progress', '--json', '--compression=zstd', '--log-json', '--exclude=pp:/home/phil/.cache', '--exclude=re:^home/phil/\\\\.var/app/[^/]+/cache/', '--exclude-caches', '--', '/run/media/phil/8F1E-4692/backup-philbot-phil::e97e1d-4832a234', '/home/phil/']\nSSH_ORIGINAL_COMMAND: None\n",
+              "msgid": "Undefined"
+            }
+          }
+        ],
+        "include": [
+          ""
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      },
+      {
+        "end": "2024-11-09T18:09:57.676858286+00:00",
+        "outcome": {
+          "Failed": "Repository.DoesNotExist"
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Repository /run/media/phil/8F1E-4692/backup-philbot-phil does not exist.",
+              "msgid": "Repository.DoesNotExist"
+            }
+          }
+        ],
+        "include": [
+          "",
+          "/etc"
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      },
+      {
+        "end": "2024-11-09T18:09:43.814928090+00:00",
+        "outcome": {
+          "Failed": "Repository.DoesNotExist"
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Repository /run/media/phil/8F1E-4692/backup-philbot-phil does not exist.",
+              "msgid": "Repository.DoesNotExist"
+            }
+          }
+        ],
+        "include": [
+          "",
+          "/etc"
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      },
+      {
+        "end": "2024-11-09T18:04:32.893924146+00:00",
+        "outcome": {
+          "Failed": "Repository.DoesNotExist"
+        },
+        "messages": [
+          {
+            "ParsedErr": {
+              "levelname": "ERROR",
+              "name": "borg.archiver",
+              "message": "Repository /run/media/phil/8F1E-4692/backup-philbot-phil does not exist.",
+              "msgid": "Repository.DoesNotExist"
+            }
+          }
+        ],
+        "include": [
+          "/"
+        ],
+        "exclude": [
+          "Caches"
+        ]
+      },
+      {
         "end": "2024-10-15T15:32:32.480552057+01:00",
         "outcome": {
           "Completed": {
@@ -32,38 +1471,374 @@
     ],
     "running": null,
     "last_completed": {
-      "end": "2024-10-15T15:32:32.480552057+01:00",
+      "end": "2024-11-09T19:20:35.096267345+00:00",
       "outcome": {
         "Completed": {
           "stats": {
             "archive": {
-              "duration": 1287.355407,
-              "id": "777edc96ccbb9ada55a1683720a84a90d9f6aed38662e36b4437913d2938e792",
-              "name": "e97e1d-abf142c3",
+              "duration": 36.735199,
+              "id": "21483f3bf287b9f0c204360f5ecf84efdf117093ccfe6fc26629bb86db517c68",
+              "name": "e97e1d-d210eada",
               "stats": {
-                "compressed_size": 98075882010,
-                "deduplicated_size": 91100719684,
-                "nfiles": 887084,
-                "original_size": 143908757811
+                "compressed_size": 98364269447,
+                "deduplicated_size": 2039928,
+                "nfiles": 891088,
+                "original_size": 145073457455
               }
             }
           }
         }
       },
-      "messages": [],
+      "messages": [
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/no-arp-ip-spoofing.xml: open: [Errno 13] Permission denied: 'no-arp-ip-spoofing.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/allow-incoming-ipv4.xml: open: [Errno 13] Permission denied: 'allow-incoming-ipv4.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/no-ipv6-spoofing.xml: open: [Errno 13] Permission denied: 'no-ipv6-spoofing.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/no-other-l2-traffic.xml: open: [Errno 13] Permission denied: 'no-other-l2-traffic.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/allow-ipv6.xml: open: [Errno 13] Permission denied: 'allow-ipv6.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/no-mac-spoofing.xml: open: [Errno 13] Permission denied: 'no-mac-spoofing.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/allow-dhcp-server.xml: open: [Errno 13] Permission denied: 'allow-dhcp-server.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/no-ip-multicast.xml: open: [Errno 13] Permission denied: 'no-ip-multicast.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/no-mac-broadcast.xml: open: [Errno 13] Permission denied: 'no-mac-broadcast.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/qemu-announce-self.xml: open: [Errno 13] Permission denied: 'qemu-announce-self.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/no-ip-spoofing.xml: open: [Errno 13] Permission denied: 'no-ip-spoofing.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/allow-dhcp.xml: open: [Errno 13] Permission denied: 'allow-dhcp.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/allow-arp.xml: open: [Errno 13] Permission denied: 'allow-arp.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/no-arp-mac-spoofing.xml: open: [Errno 13] Permission denied: 'no-arp-mac-spoofing.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/no-ipv6-multicast.xml: open: [Errno 13] Permission denied: 'no-ipv6-multicast.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/allow-dhcpv6.xml: open: [Errno 13] Permission denied: 'allow-dhcpv6.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/allow-ipv4.xml: open: [Errno 13] Permission denied: 'allow-ipv4.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/no-other-rarp-traffic.xml: open: [Errno 13] Permission denied: 'no-other-rarp-traffic.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/qemu-announce-self-rarp.xml: open: [Errno 13] Permission denied: 'qemu-announce-self-rarp.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/clean-traffic.xml: open: [Errno 13] Permission denied: 'clean-traffic.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/no-arp-spoofing.xml: open: [Errno 13] Permission denied: 'no-arp-spoofing.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/clean-traffic-gateway.xml: open: [Errno 13] Permission denied: 'clean-traffic-gateway.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/allow-incoming-ipv6.xml: open: [Errno 13] Permission denied: 'allow-incoming-ipv6.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/nwfilter/allow-dhcpv6-server.xml: open: [Errno 13] Permission denied: 'allow-dhcpv6-server.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/qemu/win10_old.xml: open: [Errno 13] Permission denied: 'win10_old.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/qemu/nixos-24.05.xml: open: [Errno 13] Permission denied: 'nixos-24.05.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/qemu/nixos.xml: open: [Errno 13] Permission denied: 'nixos.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/qemu/networks/default.xml: open: [Errno 13] Permission denied: 'default.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/qemu/networks/br10.xml: open: [Errno 13] Permission denied: 'br10.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/secrets: dir_open: [Errno 13] Permission denied: 'secrets'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/storage/default.xml: open: [Errno 13] Permission denied: 'default.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/storage/nvram.xml: open: [Errno 13] Permission denied: 'nvram.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        },
+        {
+          "ParsedErr": {
+            "levelname": "WARNING",
+            "name": "borg.archiver",
+            "message": "/etc/libvirt/storage/Downloads.xml: open: [Errno 13] Permission denied: 'Downloads.xml'",
+            "msgid": {
+              "Other": "BackupPermissionError"
+            }
+          }
+        }
+      ],
       "include": [
-        ""
+        "",
+        "/etc/libvirt"
       ],
       "exclude": [
         "Caches"
       ]
     },
     "last_check": {
-      "end": "2024-10-15T19:21:51.742753548+01:00",
+      "end": "2024-11-27T23:08:32.544746660+00:00",
       "outcome": "Success"
     },
     "suggested_exclude": {
-      "PermissionDenied": []
+      "PermissionDenied": [
+        {
+          "PathFullMatch": "/etc/libvirt/secrets"
+        }
+      ]
     }
   }
 }
