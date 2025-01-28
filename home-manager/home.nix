@@ -31,14 +31,13 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    gnome3.gvfs
+    gnome.gvfs
     nautilus
     gnome-disk-utility
     polkit
     polkit_gnome
     pika-backup
     dbus
-    libsForQt5.sddm
     libsForQt5.kdeconnect-kde
     neovim
     delta
@@ -51,6 +50,9 @@
     duplicati
     tmux
     p7zip
+    overskride
+    wayvnc
+    ollama
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -120,6 +122,29 @@
   programs.zsh = {
     enable = true;
   };
+
+systemd.user.services.ollama = {
+  # [Unit] section
+  unitConfig = {
+    Description = "Ollama Service (User)";
+    After = [ "default.target" ];
+    # If you don't need to wait on default.target, you can remove the line above
+  };
+
+  # [Service] section
+  serviceConfig = {
+    Type = "simple";
+    ExecStart = "${pkgs.ollama}/bin/ollama serve";
+    Restart = "always";
+    RestartSec = "5s";
+  };
+
+  # [Install] section
+  install = {
+    WantedBy = [ "default.target" ];
+  };
+};
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
