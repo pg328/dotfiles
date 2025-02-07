@@ -9,9 +9,13 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    android-nixpkgs = {
+      url = "github:tadfisher/android-nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { nixpkgs, catppuccin, home-manager, ... }:
+  outputs = { nixpkgs, catppuccin, home-manager, android-nixpkgs, ... }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -24,6 +28,31 @@
         modules = [
           ./home.nix
           catppuccin.homeManagerModules.catppuccin
+
+        #    {
+        #   home-manager.users.myusername = { config, lib, pkgs, ... }: {
+        #     imports = [
+        #       android-nixpkgs.hmModule
+        #
+        #       {
+        #         inherit config lib pkgs;
+        #         android-sdk.enable = true;
+        #
+        #         # Optional; default path is "~/.local/share/android".
+        #         android-sdk.path = "${config.home.homeDirectory}/.android/sdk";
+        #
+        #         android-sdk.packages = sdk: with sdk; [
+        #           build-tools-34-0-0
+        #           cmdline-tools-latest
+        #           emulator
+        #           platforms-android-34
+        #           sources-android-34
+        #         ];
+        #       }
+        #     ];
+        #   };
+        # }
+        
         ];
   
 

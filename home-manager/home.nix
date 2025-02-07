@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs ? import <nixpkgs> {}, inputs, ... }:
 # imports = [inputs.catppuccin.homeManagerModules.catppuccin];
 # gtk = {
 #   enable = true;
@@ -12,6 +12,12 @@
 #   };
 
 {
+  nixpkgs = {
+    config = {
+      allowUnfree = true;
+      
+    };
+  };
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "phil";
@@ -53,6 +59,9 @@
     overskride
     wayvnc
     ollama
+    open-webui
+    # nvidia-container-toolkit
+    nvidia-docker
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -116,31 +125,31 @@
   catppuccin.accent = "peach";
   catppuccin.flavor = "mocha";
   gtk.enable = true;
-  gtk.catppuccin.enable = true;
-  gtk.catppuccin.accent = "peach";
-  gtk.catppuccin.flavor = "mocha";
+  catppuccin.gtk.enable = true;
+  catppuccin.gtk.accent = "peach";
+  catppuccin.gtk.flavor = "mocha";
   programs.zsh = {
     enable = true;
   };
 
 systemd.user.services.ollama = {
   # [Unit] section
-  unitConfig = {
+  Unit = {
     Description = "Ollama Service (User)";
     After = [ "default.target" ];
     # If you don't need to wait on default.target, you can remove the line above
   };
 
   # [Service] section
-  serviceConfig = {
+  Service = {
     Type = "simple";
-    ExecStart = "${pkgs.ollama}/bin/ollama serve";
+    ExecStart = "OLLAMA_HOST=0.0.0.0 OLLAMA_LLM_LIBRARY=\"cuda_v11\" ${pkgs.ollama}/bin/ollama serve";
     Restart = "always";
     RestartSec = "5s";
   };
 
   # [Install] section
-  install = {
+  Install = {
     WantedBy = [ "default.target" ];
   };
 };
