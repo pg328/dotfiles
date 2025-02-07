@@ -22,6 +22,7 @@
 
 #workspaces button {
   padding: 4px 8px;
+  margin: 4px;
   color: #eeeeef;
 }
 /* Fix: active workspace doesn't show up */
